@@ -1,6 +1,8 @@
 ---
-title: "index.md (in index.md)"
+title: "Home"
 layout: page
 ---
 
-# HEEEEEEEEEEEEEEEEEEEY
+# My Name
+
+## hi this is me. 

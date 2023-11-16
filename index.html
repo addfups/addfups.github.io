@@ -1,0 +1,16 @@
+---
+layout: default
+title: "index.html"
+---
+
+<article>
+    <header><h1>index</h1></header>
+    <p>Page not found</p>
+</article>
+
+
+{% if site.show_excerpts %}
+  {% include home.html %}
+{% else %}
+  {% include archive.html title="Posts" %}
+{% endif %}
