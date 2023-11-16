@@ -1,5 +1,5 @@
 ---
-title: "README.md (in README.md)"
+title: "About"
 permalink: "/about/"
 layout: page
 ---
