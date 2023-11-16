@@ -1,6 +1,6 @@
 ---
 title: "index.md (in index.md)"
-layout: default
+layout: page
 ---
 
 # HEEEEEEEEEEEEEEEEEEEY
