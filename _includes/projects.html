@@ -15,7 +15,13 @@
   </footer>
 {% endif %} -->
 
-
+{% for post in posts %}
+  <article>
+    {% include meta.html post=post preview=true %}
+    {{ post.excerpt }}
+    <div class="more"><a href="{{ post.url | relative_url }}">read more</a></div>
+  </article>
+{% endfor %}
 
 <div class="container" id="i18_projects">
   <div class="row m-b-xl">
