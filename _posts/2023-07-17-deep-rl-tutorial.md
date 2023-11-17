@@ -21,6 +21,3 @@ The slides for this tutorial can be found [here](https://docs.google.com/present
 And the gitbook is available [here](https://zns-notes.gitbook.io/deep-reinforcement-learning/)!
 
 {% include embed.html url="https://zns-notes.gitbook.io/deep-reinforcement-learning/" %}
-
-
-[GOTo](/deep-rl-tutorial/file/)
