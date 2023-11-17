@@ -1,19 +1,22 @@
+# projects section data
+# If you don't have language feature(language.yml is empty), ignore "i18n" items
+# Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
 - name: "From Chaos Comes Order: Ordering Event Representations for Object Detection"
   url: https://rpg.ifi.uzh.ch/docs/ICCV2023_Zubic.pdf
   i18n: jalpc
-  img: /assets/me.jpg
+  img: /static/assets/img/landing/ICCV23_Zubic.png
   desc: International Conference on Computer Vision (ICCV), Paris, 2023.
 
 - name: "A Hybrid ANN-SNN Architecture for Low-Power and Low-Latency Visual Perception"
   url: https://rpg.ifi.uzh.ch/docs/arxiv23_aydin.pdf
   i18n: jalpc
-  img: /assets/me.jpg
+  img: /static/assets/img/landing/arXiv23_Aydin.png
   desc: arXiv, 2023.
 
 - name: "Event-based Agile Object Catching with a Quadrupedal Robot"
   url: https://rpg.ifi.uzh.ch/docs/ICRA23_Forrai.pdf
   i18n: jalpc
-  img: /assets/me.jpg
+  img: /static/assets/img/landing/ICRA23_Forrai.png
   desc: IEEE International Conference on Robotics and Automation (ICRA) (2023)
   gh_user: uzh-rpg
   repo: event-based_object_catching_anymal
@@ -22,14 +25,173 @@
 - name: "Pushing the Limits of Asynchronous Graph-based Object Detection with Event Cameras"
   url: https://rpg.ifi.uzh.ch/docs/arXiv22_Gehrig.pdf
   i18n: jalpc
-  img: /assets/me.jpg
+  img: /static/assets/img/landing/arXiv22_Gehrig.png
   desc: arXiv, 2023.
 
 - name: "Exploring Event Camera-based Odometry for Planetary Robots"
   url: https://rpg.ifi.uzh.ch/docs/arxiv22_Mahlknecht.pdf
   i18n: jalpc
-  img: /assets/me.jpg
+  img: /static/assets/img/landing/RAL22_Mahlknecht.png
   desc: IEEE Robotics and Automation Letters (RA-L), 2022.
   gh_user: jpl-x
   repo: x_evaluate
   youtube: KahAhSxC9_8
+
+- name: "ESS: Learning Event-based Semantic Segmentation from Still Images"
+  url: https://rpg.ifi.uzh.ch/docs/ECCV22_Sun.pdf
+  i18n: jalpc
+  img: /static/assets/img/landing/ECCV22_Sun.png
+  desc: European Conference on Computer Vision (ECCV), Tel Aviv, 2022.
+  gh_user: uzh-rpg
+  repo: ess
+  youtube: Tby5c9IDsDc
+
+- name: "AEGNN: Asynchronous Event-based Graph Neural Networks"
+  url: http://rpg.ifi.uzh.ch/docs/CVPR22_Schaefer.pdf
+  i18n: jalpc
+  img: /static/assets/img/landing/CVPR22_Schaefer.png
+  desc: Conference on Computer Vision and Pattern Recognition (CVPR) 2022 in New Orleans, USA
+  gh_user: uzh-rpg
+  repo: aegnn
+  youtube: opbFE6OsAeA
+
+- name: "Time Lens++: Event-based Frame Interpolation with Parametric Non-linear Flow and Multi-scale Fusion"
+  url: http://rpg.ifi.uzh.ch/docs/CVPR22_Tulyakov.pdf
+  i18n: jalpc
+  img: /static/assets/img/landing/CVPR22_Tulyakov.png
+  desc: Conference on Computer Vision and Pattern Recognition (CVPR) 2022 in New Orleans, USA
+  gh_user: uzh-rpg
+  repo: timelens-pp
+  youtube: AsRKQRWHbVs
+
+- name: "Are High-Resolution Event Cameras Really Needed?"
+  url: https://rpg.ifi.uzh.ch/docs/arxiv22_Gehrig.pdf
+  i18n: jalpc
+  img: /static/assets/img/landing/arxiv22_Gehrig.png
+  desc: arXiv, 2022
+  youtube: HV9_FhS-f88
+
+- name: "Bridging the Gap between Events and Frames through Unsupervised Domain Adaptation?"
+  url: https://rpg.ifi.uzh.ch/docs/Arxiv21_Messikommer.pdf
+  i18n: jalpc
+  img: /static/assets/img/landing/Arxiv21_Messikommer.png
+  desc: Robotics and Automation Letters (RA-L), 2022.
+  youtube: fZnBSqni6PY
+  gh_user: uzh-rpg
+  repo: rpg_ev-transfer
+
+- name: "Multi-Bracket High Dynamic Range Imaging with Event Cameras"
+  url: https://rpg.ifi.uzh.ch/docs/Arxiv22_MessikommerHDR.pdf
+  i18n: jalpc
+  img: /static/assets/img/landing/Arxiv22_MessikommerHDR.png
+  desc: arXiv, 2022
+  youtube: AsRKQRWHbVs
+
+
+- name: "E-RAFT: Dense Optical Flow from Event Cameras"
+  url: http://rpg.ifi.uzh.ch/docs/3DV21_Gehrig.pdf
+  i18n: jalpc
+  img: /static/assets/img/landing/Arxiv21_Flow_Gehrig.png
+  desc: International Conference on 3D Vision (3DV), 2021.
+  gh_user: uzh-rpg
+  repo: DSEC
+  youtube: dN8fl7-XfNw
+
+- name: "Time Lens: Event-based Video Frame Interpolation"
+  url: http://rpg.ifi.uzh.ch/docs/CVPR21_Gehrig.pdf
+  i18n: jalpc
+  img: /static/assets/img/landing/timelens.png
+  desc: Conference on Computer Vision and Pattern Recognition (CVPR) 2021 in Nashville, USA.
+  gh_user: uzh-rpg
+  repo: rpg_timelens
+  youtube: dVLyia-ezvo
+
+- name: "How to Calibrate Your Event Camera"
+  url: http://rpg.ifi.uzh.ch/docs/CVPRW21_Muglikar.pdf
+  i18n: jalpc
+  img: /static/assets/img/landing/CVPRW21_Muglikar.png
+  desc: Conference on Computer Vision and Pattern Recognition Workshops (CVPRW) 2021 in Nashville, USA.
+  gh_user: uzh-rpg
+  repo: e2calib
+  youtube: RYW2sHcm5aI
+
+- name: "Combining Events and Frames using Recurrent Asynchronous Multimodal Networks for Monocular Depth Prediction,"
+  url: http://rpg.ifi.uzh.ch/docs/RAL21_Gehrig.pdf
+  i18n: jalpc
+  img: /static/assets/img/landing/ramnet.png
+  desc: Robotics and Automation Letters (RA-L) 2021. 
+  gh_user: uzh-rpg
+  repo: rpg_ramnet
+  youtube: 7Hbi-YFCuRY
+
+- name: "DSEC: A Stereo Event Camera Dataset for Driving Scenarios,"
+  url: http://rpg.ifi.uzh.ch/docs/RAL21_DSEC.pdf
+  i18n: jalpc
+  img: /static/assets/img/landing/dsec.png
+  desc: Robotics and Automation Letters (RA-L) 2021.
+  gh_user: uzh-rpg
+  repo: DSEC
+  youtube: uTa6-ME547Q
+
+- name: "Learning Monocular Dense Depth from Events,"
+  url: http://rpg.ifi.uzh.ch/docs/3DV20_Hidalgo.pdf
+  i18n: jalpc
+  img: /static/assets/img/landing/depth.png
+  desc: International Conference on 3D Vision (3DV) 2020 in Fukuoka, Japan
+  gh_user: uzh-rpg
+  repo: rpg_e2depth
+  youtube: MJ6klYG1rQc
+
+- name: "Event-based Asynchronous Sparse Convolutional Networks,"
+  url: http://rpg.ifi.uzh.ch/docs/ECCV20_Messikommer.pdf
+  i18n: jalpc
+  img: /static/assets/img/landing/asyn.png
+  desc: European Conference of Computer Vision (ECCV) 2020 in Glasgow, United Kingdom.
+  gh_user: uzh-rpg
+  repo: rpg_asynet
+  youtube: g_I5k_QFQJA
+
+- name: "Video to Events: Recycling Video Datasets for Event Cameras"
+  url: http://rpg.ifi.uzh.ch/docs/arXiv19_Gehrig_vid.pdf
+  i18n: jalpc
+  img: /static/assets/img/landing/vid2e.png
+  desc: Conference on Computer Vision and Pattern Recognition (CVPR) 2020 in Seattle, USA.
+  gh_user: uzh-rpg
+  repo: rpg_vid2e
+  youtube: uX6XknBGg0w
+
+- name: "Fast Image Reconstruction with an Event Camera"
+  url: http://rpg.ifi.uzh.ch/docs/WACV20_Scheerlinck.pdf
+  i18n: jalpc
+  img: /static/assets/img/landing/fire.png
+  desc: Winter Conference on Applications of Computer Vision (WACV) 2020. 
+  gh_user: cedric-scheerlinck
+  repo: rpg_e2vid
+  youtube: QaGYFtR2-X8
+
+- name: "End-to-End Learning of Representations for Asynchronous Event-Based Data"
+  url: http://rpg.ifi.uzh.ch/docs/ICCV19_Gehrig.pdf
+  i18n: cpython
+  gh_user: uzh-rpg
+  repo: rpg_event_representation_learning
+  img: /static/assets/img/landing/repr.png
+  desc: International Conference on Computer Vision (ICCV) 2019 in Seoul, South Korea. 
+  youtube: bQtSx59GXRY
+
+- name: "ESIM: an Open Event Camera Simulator"
+  url: http://rpg.ifi.uzh.ch/docs/CORL18_Rebecq.pdf
+  i18n: google
+  gh_user: uzh-rpg
+  repo: rpg_esim
+  img: /static/assets/img/landing/esim.png
+  desc: Conference on Robot Learning (CoRL) 2018 in Zurich, Switzerland.
+  youtube: ytKOIX_2clo
+
+- name: "EKLT: Asynchronous, Photometric Feature Tracking using Events and Frames"
+  url: http://rpg.ifi.uzh.ch/docs/IJCV19_Gehrig.pdf
+  i18n: google
+  gh_user: uzh-rpg
+  repo: rpg_eklt
+  img: /static/assets/img/landing/eklt.jpg
+  desc: International Journal of Computer Vision (IJCV) 2019. 
+  youtube: ZyD1YPW1h4U
