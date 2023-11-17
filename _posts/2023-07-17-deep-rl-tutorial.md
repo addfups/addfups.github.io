@@ -12,7 +12,7 @@ The slides for this tutorial can be found [here](https://docs.google.com/present
 
 {% include embed.html url="https://docs.google.com/presentation/d/1R8bK2_BzFIJtn8VFUzW6BvzrO22wxqUGdT4V-Sfal04/edit?usp=sharing" %}
 
-And the gitbook is available [here](https://zns-notes.gitbook.io/deep-reinforcement-learning/)
-x{% include embed.html url="https://zns-notes.gitbook.io/deep-reinforcement-learning/" %}
 
-https://github.com/zahra-niazi/DRL/tree/main/deep%20rl%20tutorial
+And the gitbook is available [here](https://zns-notes.gitbook.io/deep-reinforcement-learning/)!
+
+{% include embed.html url="https://zns-notes.gitbook.io/deep-reinforcement-learning/" %}
