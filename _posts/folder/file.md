@@ -3,6 +3,7 @@
 title: "file.md"
 permalink: "/file/"
 layout: page
+sitemap: true
 ---
 
 
