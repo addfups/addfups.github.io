@@ -15,5 +15,7 @@ The slides for this tutorial can be found [here](https://docs.google.com/present
 {% include embed.html url="https://docs.google.com/presentation/d/1R8bK2_BzFIJtn8VFUzW6BvzrO22wxqUGdT4V-Sfal04/edit?usp=sharing" %}
 
 So, let's get started with Deep Reinforcement Learning!
-{% include embed.html url="https://zns-notes.gitbook.io/deep-reinforcement-learning/" %}
-{% include embed.html url="https://github.com/zahra-niazi/DRL.git" %}
+<!-- {% include embed.html url="https://zns-notes.gitbook.io/deep-reinforcement-learning/" %}
+{% include embed.html url="https://github.com/zahra-niazi/DRL.git" %} -->
+
+<iframe src="https://github.com/zahra-niazi/DRL"></iframe>
