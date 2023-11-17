@@ -1,7 +1,7 @@
 
 ---
 title: "file.md"
-permalink: "/file/"
+permalink: "/deep-rl-tutorial/file/"
 layout: page
 sitemap: true
 ---
