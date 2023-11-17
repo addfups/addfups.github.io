@@ -82,4 +82,4 @@ So, let's get started with Deep Reinforcement Learning!
 ## Offline Reinforcement Learning
 
 * [Offline vs. Online Reinforcement Learning](deep-rl-tutorial/offline-reinforcement-learning/offline-vs.-online-reinforcement-learning.md)
-* [What makes Offline Reinforcement Learning Difficult?](deep-rl-tutorial/offline-reinforcement-learning/what-makes-offline-reinforcement-learning-difficult.md)
+* [What makes Offline Reinforcement Learning Difficult?](deep-rl-tutorial/offline-reinforcement-learning/what-makes-offline-reinforcement-learning-difficult)
