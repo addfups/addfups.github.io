@@ -30,3 +30,6 @@ comments:
 
 plugins:
  - jekyll-feed
+ 
+markdown:   kramdown
+style:  kjhealy
