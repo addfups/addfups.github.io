@@ -3,10 +3,7 @@ title: "DRL tutorial"
 layout: post
 ---
 
-# 👋 Welcome to the Deep Reinforcement Learning Tutorial
-
 Hey there!
-
 Welcome to this Deep Reinforcement Learning (DRL) tutorial!
 
 During my graduate course on neural networks and deep learning at Ferdowsi University of Mashhad, under the guidance of Dr. Rouhani, I was tasked with making a presentation about deep reinforcement learning. It was a fascinating challenge to connect what we learned in class with the real-world applications of deep learning in reinforcement scenarios.
