@@ -26,4 +26,4 @@ And the gitbook is available [here](https://zns-notes.gitbook.io/deep-reinforcem
 {% include embed.html url="https://zns-notes.gitbook.io/deep-reinforcement-learning/" %}
 
 
-[GOTo](/file)
+[GOTo](folder/file/)
