@@ -1,17 +1,17 @@
 {% for project in site.data.prjs %}
    
-        <img src="{{ project.img | prepend: site.baseurl }}" class="img-responsive img-circle img-small" alt="">
+        <img src="{{ project.img | prepend: site.baseurl }}" >
         
             {% if project.url %}
                 <a href="{{ project.url }}" target="_blank">
-                    <span class="navy">{{ project.name }}</span>
+                    <span>{{ project.name }}</span>
                 </a>
             {% elsif project.repo %}
                 <a href="https://github.com/{{ project.gh_user }}/{{ project.repo }}" target="_blank">
-                    <span class="navy">{{ project.name }}</span>
+                    <span>{{ project.name }}</span>
                 </a>
             {% else %}
-                <span class="navy">{{ project.name }}</span>
+                <span>{{ project.name }}</span>
             {% endif %}
             
         <p>
@@ -19,23 +19,21 @@
         </p>
 
         {% if project.youtube %}
-            <div class="col-sm-6 wow animated" style="visibility: visible">
-                <a target="_blank" style="width: 80px;" href="https://youtu.be/{{ project.youtube }}">
-                    <i class="fa fa-youtube-play"></i>
+            <div>
+                <a href="https://youtu.be/{{ project.youtube }}">
                     YouTube
                 </a>
         {% endif %}  
             </div>
 
         {% if project.repo %}
-            <div user="{{ project.gh_user }}" repo="{{ project.repo }}" class="ghbtn">
-                <a target="_blank" style="width: 65px;" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/stargazers" class="btn btn-white btn-xs star"><i class="fa fa-star"></i> ...</a>&emsp;&emsp;
-                <a target="_blank" style="width: 65px;" href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/network" class="btn btn-white btn-xs fork"><i class="fa fa-code-fork"></i> ...</a>
-                <div style="height: 10px;"></div>
+            <div user="{{ project.gh_user }}" repo="{{ project.repo }}" >
+                <a href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/stargazers" >...</a>&emsp;&emsp;
+                <a href="https://github.com/{{ project.gh_user }}/{{ project.repo }}/network">...</a>
             </div>
         {% endif %}
 
 {% endfor %}
-{% for repository in site.github.public_repositories %}
+<!-- {% for repository in site.github.public_repositories %}
 {{ repository.name }} {{ repository.html_url }}
-{% endfor %}
+{% endfor %} -->
