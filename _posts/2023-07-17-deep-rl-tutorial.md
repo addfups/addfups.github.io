@@ -12,7 +12,7 @@ In this tutorial, I intend to guide you through the fundamental concepts of DRL 
 
 The slides for this tutorial can be found [here](https://docs.google.com/presentation/d/1R8bK2\_BzFIJtn8VFUzW6BvzrO22wxqUGdT4V-Sfal04/edit?usp=drive\_link)!
 
-<!-- {% embed url="https://docs.google.com/presentation/d/1R8bK2_BzFIJtn8VFUzW6BvzrO22wxqUGdT4V-Sfal04/edit?usp=sharing" %} -->
+{% include embed.html url="https://docs.google.com/presentation/d/1R8bK2_BzFIJtn8VFUzW6BvzrO22wxqUGdT4V-Sfal04/edit?usp=sharing" %}
 
 So, let's get started with Deep Reinforcement Learning!
 
