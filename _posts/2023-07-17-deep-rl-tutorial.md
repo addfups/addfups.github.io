@@ -15,9 +15,9 @@ The slides for this tutorial can be found [here](https://docs.google.com/present
 {% include embed.html url="https://docs.google.com/presentation/d/1R8bK2_BzFIJtn8VFUzW6BvzrO22wxqUGdT4V-Sfal04/edit?usp=sharing" %}
 
 So, let's get started with Deep Reinforcement Learning!
+{% include embed.html url="https://github.com/zahra-niazi/DRL/tree/main/deep%20rl%20tutorial" %}
 
-
-
+<!-- 
 # Table of contents
 
 * [👋 Welcome to the Deep Reinforcement Learning Tutorial](README.md)
@@ -82,4 +82,4 @@ So, let's get started with Deep Reinforcement Learning!
 ## Offline Reinforcement Learning
 
 * [Offline vs. Online Reinforcement Learning](deep-rl-tutorial/offline-reinforcement-learning/offline-vs.-online-reinforcement-learning.md)
-* [What makes Offline Reinforcement Learning Difficult?](deep-rl-tutorial/offline-reinforcement-learning/what-makes-offline-reinforcement-learning-difficult)
+* [What makes Offline Reinforcement Learning Difficult?](deep-rl-tutorial/offline-reinforcement-learning/what-makes-offline-reinforcement-learning-difficult) -->
