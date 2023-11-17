@@ -1,3 +1,8 @@
+---
+title: "DRL tutorial"
+layout: post
+---
+
 # 👋 Welcome to the Deep Reinforcement Learning Tutorial
 
 Hey there!
@@ -19,3 +24,6 @@ The slides for this tutorial can be found [here](https://docs.google.com/present
 And the gitbook is available [here](https://zns-notes.gitbook.io/deep-reinforcement-learning/)!
 
 {% include embed.html url="https://zns-notes.gitbook.io/deep-reinforcement-learning/" %}
+
+
+[GOTo](/folder/file.md)
