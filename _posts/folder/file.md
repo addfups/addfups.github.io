@@ -3,7 +3,6 @@
 title: "file.md"
 permalink: "/deep-rl-tutorial/file/"
 layout: page
-sitemap: true
 ---
 
 
