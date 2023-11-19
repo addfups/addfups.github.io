@@ -2,6 +2,7 @@
 layout: page
 title: "CV"
 permalink: "/cv/"
+mathjax: true
 ---
 # Hardware Subsystems
 
