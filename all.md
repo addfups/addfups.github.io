@@ -82,11 +82,11 @@ The Eddie Control Board communicates over USB; and when connected to a PC, the b
 
 All commands adhere to the same general format which is shown below:
 
-**Input:** $\textcolor{OliveGreen}{\< cmd \>}[\textcolor{BrickRed}{\< WS \>}\textcolor{OliveGreen}{\< param1 \>}...\textcolor{BrickRed}{\< WS \>}\textcolor{OliveGreen}{\< paramN \>}]\textcolor{BrickRed}{\< CR \>}$
+**Input:** $$\textcolor{OliveGreen}{\< cmd \>}[\textcolor{BrickRed}{\< WS \>}\textcolor{OliveGreen}{\< param1 \>}...\textcolor{BrickRed}{\< WS \>}\textcolor{OliveGreen}{\< paramN \>}]\textcolor{BrickRed}{\< CR \>}$$
 
-**Response (Success):** $[\textcolor{OliveGreen}{\< param1 \>}...\textcolor{BrickRed}{\< WS \>}\textcolor{OliveGreen}{\< paramN \>}]\textcolor{BrickRed}{\< CR \>}$
+**Response (Success):** $$[\textcolor{OliveGreen}{\< param1 \>}...\textcolor{BrickRed}{\< WS \>}\textcolor{OliveGreen}{\< paramN \>}]\textcolor{BrickRed}{\< CR \>}$$
 
-**Response (Failure):** $\textcolor{RoyalBlue}{Error}[\textcolor{BrickRed}{\< SP \>}-\textcolor{BrickRed}{\< SP \>}\textcolor{OliveGreen}{\< verbose\\_reason \>}]\textcolor{BrickRed}{\< CR \>}$
+**Response (Failure):** $$\textcolor{RoyalBlue}{Error}[\textcolor{BrickRed}{\< SP \>}-\textcolor{BrickRed}{\< SP \>}\textcolor{OliveGreen}{\< verbose\\_reason \>}]\textcolor{BrickRed}{\< CR \>}$$
 
 
 In this format:
