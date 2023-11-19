@@ -7,9 +7,9 @@ categories: media
 
 ![Swiss Alps](https://user-images.githubusercontent.com/4943215/55412536-edbba180-5567-11e9-9c70-6d33bca3f8ed.jpg)
 
-\color{red}\textsf{Color didint work .}
+\fcolorbox{red}{aqua}{A}
 ## MathJax
-
+\textsf{Color didint work .}
 You can enable MathJax by setting `mathjax: true` on a page or globally in the `_config.yml`. Some examples:
 
 [Euler's formula](https://en.wikipedia.org/wiki/Euler%27s_formula) relates the  complex exponential function to the trigonometric functions.
