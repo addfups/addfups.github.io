@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: "CV"
 permalink: "/cv/"
 mathjax: true
