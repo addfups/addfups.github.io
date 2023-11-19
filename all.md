@@ -1,9 +1,10 @@
 ---
-layout: post
-title: "CV"
-permalink: "/cv/"
+title:  "Advanced examples"
 mathjax: true
+layout: post
+categories: media
 ---
+
 # Hardware Subsystems
 
 Eddie is a versatile mobile robotics development platform. Eddie is equipped with 3D vision capabilities, utilizing the Microsoft Kinect, allowing it to perceive its surroundings in three dimensions.&#x20;
