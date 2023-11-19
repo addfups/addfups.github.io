@@ -14,7 +14,7 @@ The platform is versatile, supporting applications like autonomous navigation, m
 Eddie is a differential drive robot featuring a microcontroller with an integrated PID, two optical wheel encoders, two PWM driven motors, and two lead-acid batteries. The robot’s structure comprises a pair of top and bottom decks, along with an undercarriage designed to hold the batteries securely.
 
 <p align = "center">
-<img src = "/assets/0.jpeg">
+<img src = "assets/0.jpeg">
 </p>
 <p align = "center">
 Eddie Platform
@@ -35,7 +35,7 @@ It’s important to note that the actual resolution may be limited by the amount
 The Eddie Control Board provides a complete single-board solution to control the Eddie Robot Platform. It utilizes the powerful Propeller P8X32A microcontroller, boasting eight 32-bit cores for impressive performance and versatility. The board incorporates high-current motor drivers, an eight-channel 10-bit ADC, and ample digital I/O options. It communicates via a USB mini-B connector, which enumerates as a serial COM port.
 
 <p align = "center">
-<img src = "/assets/1.jpeg">
+<img src = "assets/1.jpeg">
 </p>
 <p align = "center">
 Board Overview
@@ -66,7 +66,7 @@ The Kinect’s various sensors output video at frame rates ranging from approxim
 To power the motorized tilt mechanism of the Kinect sensor, a proprietary connector combining USB communication and additional power is used, while older models require a special power supply cable that splits the connection into separate USB and power connections.
 
 <p align = "center">
-<img src = "/assets/2.jpeg">
+<img src = "assets/2.jpeg">
 </p>
 <p align = "center">
 Kinect Components
@@ -205,7 +205,7 @@ By publishing these topics, the `kinect_ros2` package enables other nodes in the
 
 
 <p align = "center">
-<img src = "/assets/Screenshot from 2023-07-02 16-21-17.png">
+<img src = "assets/Screenshot from 2023-07-02 16-21-17.png">
 </p>
 <p align = "center">
 Testing Kinect
@@ -339,7 +339,7 @@ In terms of using the dimensions of our robot, the only dimension we need is the
 Now let’s define some variables to keep track of these ideas:
 
 <p align = "center">
-<img src = "/assets/4.jpeg">
+<img src = "assets/4.jpeg">
 </p>
 <p align = "center">
 Figure 4
@@ -412,7 +412,7 @@ What this means is that our encoders are able to collect data very frequently so
 We then calculate the **angle of the distance** in terms of a previously solved variable, and the **new orientation** of the robot as shown in Figure 5:
 
 <p align = "center">
-<img src = "/assets/8.jpeg">
+<img src = "assets/8.jpeg">
 </p>
 <p align = "center">
 Figure 5
@@ -449,7 +449,7 @@ y_t = y_{t-1} + d sin(\theta_{t-1} + \frac{\Delta \theta_t}{2})
 $$
 
 <p align = "center">
-<img src = "/assets/12.jpeg">
+<img src = "assets/12.jpeg">
 </p>
 <p align = "center">
 Figure 7
@@ -584,7 +584,7 @@ Laser scans associated with each pose in the pose graph are used to construct an
 [Here](https://youtu.be/gvVIIlhwI-I) is our attempt at testing slam\_toolbox alongside nav2.
 
 <p align = "center">
-<img src = "/assets/MAP.png">
+<img src = "assets/MAP.png">
 </p>
 <p align = "center">
 The map we can obtain in the video
@@ -774,7 +774,7 @@ In the context of ROS, RTAB-Map is available as a package that serves as a wrapp
 In our specific case, where we have an **RGB-D camera**, **odometry** information from wheel encoders, and **fake laser scans** generated from depth images, we fine-tuned RTABMap’s parameters to achieve optimal performance and accuracy. Here’s how we adjusted the parameters:
 
 <p align = "center">
-<img src = "/assets/13.jpeg">
+<img src = "assets/13.jpeg">
 </p>
 <p align = "center">
 <a href="http://wiki.ros.org/rtabmap_ros/Tutorials/SetupOnYourRobot">Kinect + Odometry + Fake 2D laser from Kinect</a>
