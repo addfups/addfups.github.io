@@ -6,7 +6,9 @@ categories: media
 ---
 
 # Hardware Subsystems
-
+$$
+y = \textcolor{red}{\sin} x
+$$
 Eddie is a versatile mobile robotics development platform. Eddie is equipped with 3D vision capabilities, utilizing the Microsoft Kinect, allowing it to perceive its surroundings in three dimensions.&#x20;
 
 The platform is versatile, supporting applications like autonomous navigation, machine vision system development, tele-presence robots, personal assistant robots, security and surveillance robots, and crowd interaction and advertising.
