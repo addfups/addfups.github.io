@@ -7,7 +7,7 @@ categories: media
 
 ![Swiss Alps](https://user-images.githubusercontent.com/4943215/55412536-edbba180-5567-11e9-9c70-6d33bca3f8ed.jpg)
 
-$\textcolor{red}{\textsf{Color didint work .}}$
+$\color{red}{\textsf{Color didint work .}}$
 ## MathJax
 
 You can enable MathJax by setting `mathjax: true` on a page or globally in the `_config.yml`. Some examples:
