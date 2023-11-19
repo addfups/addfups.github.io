@@ -3,49 +3,6 @@ layout: page
 title: "CV"
 permalink: "/cv/"
 ---
-
-
-# Exploration of SLAM and Navigation with Eddie
-
-This is a report on the exciting exploration of 2D and Visual SLAM and navigation with Eddie, a versatile differential drive robot.
-
-In this report, we delve into a detailed analysis of Eddie's hardware and software components, including its firmware command set. We also discuss the challenges we encountered while setting up Eddie's Kinect sensor and the step-by-step process of bringing Eddie to life and teleoperating it from a static laptop.
-
-Then, we unravel Eddie's kinematic model and delve into the mathematical intricacies involved in obtaining the odometry for our differential drive robot. We present a thorough analysis of the formulas and calculations used to precisely track Eddie's movements.
-
-Next, we deep dive into 2D SLAM and ROS2 navigation techniques, testing the methods to create a map of Eddie's environment and exploring how Eddie successfully navigates through it.
-
-Lastly, we explore various visual SLAM libraries. Ultimately we decide on RTABMap, and we evaluate its performance with Eddie.
-
-
-
-
-# Table of contents
-
-* [Introduction](README.md)
-
-## Eddie setup and bringup
-
-* [Hardware Subsystems](eddie-setup-and-bringup/hardware-subsystems.md)
-* [Control Board Firmware Command Set](eddie-setup-and-bringup/control-board-firmware-command-set.md)
-* [Software Subsystems](eddie-setup-and-bringup/software-subsystems.md)
-* [Setting up the Kinect](eddie-setup-and-bringup/setting-up-the-kinect.md)
-* [Bringup](eddie-setup-and-bringup/bringup.md)
-* [Networking](eddie-setup-and-bringup/networking.md)
-
-## Odometry
-
-* [Motor Control](odometry/motor-control.md)
-* [Wheel Odometry Model](odometry/wheel-odometry-model.md)
-
-## SLAM and Navigation
-
-* [2D SLAM](slam-and-navigation/2d-slam.md)
-* [Nav2](slam-and-navigation/nav2.md)
-* [vSLAM](slam-and-navigation/vslam.md)
-
-
-
 # Hardware Subsystems
 
 Eddie is a versatile mobile robotics development platform. Eddie is equipped with 3D vision capabilities, utilizing the Microsoft Kinect, allowing it to perceive its surroundings in three dimensions.&#x20;
@@ -115,8 +72,6 @@ To power the motorized tilt mechanism of the Kinect sensor, a proprietary connec
 Kinect Components
 </p>
 
-
-
 # Control Board Firmware Command Set
 
 The Eddie Control Board is a complete robot controller and sensor-interface solution. Parallax’s ready-to-go Eddie Control Board firmware, designed for the Eddie Robot Platform provides an easy-to-use serial command interface to control and manage all of the on-board peripheral electronics such as motor drivers, digital I/O, and analog to digital converter (ADC) channels.
@@ -158,7 +113,6 @@ Allowed characters are in the ASCII range from 32 to 126, except for carriage re
 ## Table 4: Eddie Command Set Description: _Motor Control_
 
 <table data-full-width="false"><thead><tr><th width="110.19999999999999">Cmd</th><th width="135">Input Params</th><th width="144">Return Params</th><th>Values</th><th>Description</th></tr></thead><tbody><tr><td>GO</td><td>&#x3C;left>&#x3C;right></td><td></td><td>left/right=80..7F</td><td>Set motor power (signed byte)</td></tr><tr><td>GOSPD</td><td>&#x3C;left>&#x3C;right></td><td></td><td>left/right=8000..7FFF</td><td>Set motor speed (signed word)</td></tr><tr><td>STOP</td><td>&#x3C;dist></td><td></td><td>dist=0..FFFF</td><td>Slow to a stop over specified distance</td></tr><tr><td>TRVL</td><td>&#x3C;dist>&#x3C;speed></td><td></td><td><p>dist=8000..7FFF </p><p>speed=1..7F or 1..FF</p></td><td>Travel a specified distance in a straight line, ramping up to a maximum specified speed</td></tr><tr><td>TURN</td><td>&#x3C;angle>&#x3C;speed></td><td></td><td><p>dist=8000..7FFF </p><p>speed=1..7F or 1..FF</p></td><td>Rotate in place by a specified angle, ramping up to a maximum specified speed</td></tr><tr><td>STOP</td><td>&#x3C;rate></td><td></td><td>rate=1..7F or 1..FF</td><td>Set rate of acceleration/deceleration</td></tr><tr><td>SPD</td><td></td><td>&#x3C;left>&#x3C;right></td><td>left/right=8000..7FFF</td><td>Get the current average speed (positions per second) for both wheels</td></tr><tr><td>HEAD</td><td></td><td>&#x3C;angle></td><td>angle=0..168 (decimal 0..359)</td><td>Get the current heading (in degrees) relative to start</td></tr><tr><td>DIST</td><td></td><td>&#x3C;left>&#x3C;right></td><td>left/right=80000000.. 7FFFFFFF</td><td>Get the current average speed (positions per second) for both wheels</td></tr><tr><td>RST</td><td></td><td></td><td></td><td>Reset the distance and heading values to 0</td></tr></tbody></table>
-
 
 # Software Subsystems
 
@@ -236,7 +190,6 @@ The eddiebot\_nav package is the central location for managing all the launch fi
 
 In addition to 2D SLAM, the eddiebot\_nav package also explores vSLAM using RTAB-Map. RTAB-Map is a popular vSLAM library that enables the robot to construct 3D maps of the environment using both visual and depth information from RGB-D cameras. This advanced vSLAM technique enhances the accuracy and richness of the mapping process, enabling Eddie to navigate more efficiently in complex environments. For autonomous navigation, Eddie utilizes the Nav2 framework. The navigation stack is a collection of algorithms and components responsible for planning and executing the robot’s path from its current location to the target destination. In this launch file we also run the static transformations from the robot’s frame to the RGB and depth frames.
 
-
 # Setting up the Kinect
 
 The `kinect_ros2` package is a component that allows the Eddie robot to interface with a Microsoft Kinect sensor and utilize its RGB and depth images for perception tasks in ROS2.&#x20;
@@ -268,7 +221,6 @@ This affects the quality of visual data and hinders the performance of perceptio
 To address this issue, we fixed the out-of-sync timestamps. We ensured that both topics publish their data with matching timestamps, ensuring that the calibration and intrinsic parameters correspond accurately to the corresponding RGB and depth images.&#x20;
 
 By resolving the timestamp synchronization problem, we improved the quality and reliability of our perception and mapping processes. It allowed our robot to better perceive and interpret the environment, leading to more accurate navigation and decision-making capabilities. As a result, the overall performance and robustness of our robot’s perception system were greatly enhanced, allowing it to operate more effectively and efficiently in its environment.
-
 # Bringup
 
 After successfully setting up the Kinect package, we proceeded to bring up Eddie and test his movement. The steps we followed are as follows:
@@ -589,7 +541,6 @@ void EddieOdomPublisher::publish_odom_(double dx, double dy, double dth, double 
     odom_pub_->publish(odom);
 }
 ```
-
 # 2D SLAM
 
 ## slam\_toolbox
@@ -638,7 +589,6 @@ Laser scans associated with each pose in the pose graph are used to construct an
 <p align = "center">
 The map we can obtain in the video
 </p>
-
 # Nav2
 
 Navigation in robotics refers to the ability of a robot to move from one location to another in an environment while avoiding obstacles and reaching its destination safely. The Nav2 project leverages ROS2 for building its navigation stack, which includes various components to enable mobile robot navigation.
