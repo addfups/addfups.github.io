@@ -86,7 +86,7 @@ All commands adhere to the same general format which is shown below:
 
 **Input:** $$ \textcolor{OliveGreen}{cmd}$$$$[\textcolor{BrickRed}{WS}$$$$\textcolor{OliveGreen}{param1$$$$\textcolor{BrickRed}{WS}$$$$\textcolor{OliveGreen}{paramN}]$$$$\textcolor{BrickRed}{CR} $$
 
-**Response (Success):** $$ [\textcolor{OliveGreen}{param1}...\textcolor{BrickRed}{< WS >}\textcolor{OliveGreen}{< paramN >}]\textcolor{BrickRed}{< CR >} $$
+**Response (Success):** $$ [\textcolor{Red}{param1}...\textcolor{Red}{< WS >}\textcolor{Red}{< paramN >}]\textcolor{Red}{< CR >} $$
 
 **Response (Failure):** $$\textcolor{RoyalBlue}{Error}[\textcolor{BrickRed}{\< SP \>}-\textcolor{BrickRed}{\< SP \>}\textcolor{OliveGreen}{\< verbose\\_reason \>}]\textcolor{BrickRed}{\< CR \>}$$
 
