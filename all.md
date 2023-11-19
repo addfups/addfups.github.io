@@ -91,12 +91,12 @@ All commands adhere to the same general format which is shown below:
 
 In this format:
 
-* $\textcolor{OliveGreen}{\< cmd \>}$ represents the command mnemonic.
-* $\textcolor{OliveGreen}{\< param1 \>}...\textcolor{OliveGreen}{\< paramN \>}$ are optional parameters required by the command or mode. Numbers are always entered as hexadecimal values, and signed values use two’s complement.
-* $\textcolor{BrickRed}{\< WS \>}$ refers to one or more whitespace characters, which can be spaces (ASCII 32) or tabs (ASCII 9).
-* $\textcolor{BrickRed}{\< CR \>}$ is a single carriage-return character (ASCII 13).
-* $\textcolor{BrickRed}{\< SP \>}$ is a single space character (ASCII 32).
-* $\textcolor{OliveGreen}{\< verbose\\_reason \>}$ is an optional error message displayed when verbose mode is enabled (using the VERB command).
+* $$\textcolor{OliveGreen}{\< cmd \>}$$ represents the command mnemonic.
+* $$\textcolor{OliveGreen}{\< param1 \>}...\textcolor{OliveGreen}{\< paramN \>}$$ are optional parameters required by the command or mode. Numbers are always entered as hexadecimal values, and signed values use two’s complement.
+* $$\textcolor{BrickRed}{\< WS \>}$$ refers to one or more whitespace characters, which can be spaces (ASCII 32) or tabs (ASCII 9).
+* $$\textcolor{BrickRed}{\< CR \>}$$ is a single carriage-return character (ASCII 13).
+* $$\textcolor{BrickRed}{\< SP \>}$$ is a single space character (ASCII 32).
+* $$\textcolor{OliveGreen}{\< verbose\\_reason \>}$$ is an optional error message displayed when verbose mode is enabled (using the VERB command).
 
 Allowed characters are in the ASCII range from 32 to 126, except for carriage return (ASCII 13) and tab (ASCII 9). Commands can have up to 254 characters, including the terminating carriage return character. Anything beyond this limit is ignored as an invalid command. The command handler only processes and responds after receiving the carriage return character.
 
@@ -118,11 +118,11 @@ Allowed characters are in the ASCII range from 32 to 126, except for carriage re
 
 # Software Subsystems
 
-## Robot Communication: **$\textcolor{Plum}{\texttt{eddiebot\\_bringup}}$**
+## Robot Communication: **$$\textcolor{Plum}{\texttt{eddiebot\\_bringup}}$$**
 
 The communication with the board involves establishing a connection between the robot control board and our ROS2 programs, enabling seamless data exchange. This software acts as a pathway that conveys and receives data between two of our major hardware components. Specifically, this sub-system serves as the means to convey the desired velocity information from the control system to be executed by the robot’s firmware board.&#x20;
 
-## Description: $\textcolor{Plum}{\texttt{eddiebot\\_description}}$
+## Description: $$\textcolor{Plum}{\texttt{eddiebot\\_description}}$$
 
 This package contains files and data used to describe the structure of eddie. It includes URDF files to define the physical properties and kinematic structure of eddie. This package enables accurate simulation of Eddie’s structure and movement within the ROS environment. This is crucial for visualizing and controlling the robot in a virtual space before deploying it in the physical world.
 
@@ -135,7 +135,7 @@ In the launch file we run two nodes:
 * `robot_state_publisher`: The robot\_state\_publisher reads the URDF description file and generates static transformations (tf static transforms). These transformations define the spatial relationship between different components of the robot, such as its base, wheels and different sensors.
 * `joint_state_publisher`: The joint\_state\_publisher node sends dynamic transformations from the wheels to the robot\_state\_publisher. These dynamic transformations update the joint positions based on the movement of the wheels, allowing the `robot_state_publisher` to accurately track and represent the robot’s current state.
 
-## Simulation: $\textcolor{Plum}{\texttt{eddiebot\\_gazebo}}$
+## Simulation: $$\textcolor{Plum}{\texttt{eddiebot\\_gazebo}}$$
 
 The eddiebot\_gazebo package enables us to test and experiment with Eddie’s behavior in the Gazebo simulation environment.
 
@@ -143,7 +143,7 @@ When we run the main launch file in this package, it sets up the Gazebo simulato
 
 This step essentially brings Eddie to life in the simulation, and we can now control and observe its actions as if it were a real physical robot. To ensure communication between Gazebo and the ROS2 ecosystem, the eddiebot\_gazebo package establishes a connection between their respective topics.
 
-## Custom Interfaces: $\textcolor{Plum}{\texttt{eddiebot\\_msgs}}$
+## Custom Interfaces: $$\textcolor{Plum}{\texttt{eddiebot\\_msgs}}$$
 
 In the eddiebot\_msgs package, we define the custom interfaces for Eddie, the robot. This package allows us to define the specific topics and services through which we can communicate information about Eddie’s current state and control its movements.
 
@@ -153,7 +153,7 @@ Additionally, we define services that can be used to communicate with the robot 
 
 By defining these custom interfaces in the eddiebot\_msgs package, we establish a standardized and consistent way to exchange information and control commands between different components of the system, facilitating effective communication and interaction with Eddie.
 
-## Odometry: $\textcolor{Plum}{\texttt{eddiebot\\_odom}}$
+## Odometry: $$\textcolor{Plum}{\texttt{eddiebot\\_odom}}$$
 
 The eddiebot\_odom package plays a crucial role in enabling Eddie to understand its position and movement within the environment. It is responsible for publishing odometry information, which is an estimation of Eddie’s position and orientation based on the motion of its wheels. Odometry is essential for mapping and localization tasks in robotics.
 
@@ -170,7 +170,7 @@ By knowing how far Eddie has moved from its initial position and the angular cha
 
 Having accurate odometry enables Eddie to navigate its environment more effectively. It can use this information to create a map of the environment. However, it’s worth noting that odometry estimates may drift over time due to inaccuracies and wheel slippage, especially in complex environments. To improve localization accuracy, other sensor modalities like visual odometry or an IMU can be used in conjunction with wheel encoders.
 
-## Visualization: $\textcolor{Plum}{\texttt{eddiebot\\_rviz}}$
+## Visualization: $$\textcolor{Plum}{\texttt{eddiebot\\_rviz}}$$
 
 The eddiebot\_rviz package is responsible for visualizing Eddie’s current state and movement in a visualization environment like RViz.
 
@@ -180,13 +180,13 @@ The eddiebot\_rviz package subscribes to various topics that publish real-time d
 
 The real-time visualization in RViz allows us to interactively analyze Eddie’s behavior. We can observe how the robot responds to different commands and paths, assess its trajectory, and verify whether its movements align with the intended behavior. In addition to joint angles and pose, the eddiebot\_rviz package can also display other sensor data within RViz. For example, it can visualize data from range sensors, cameras, or any other sensors equipped on the robot. This feature is valuable for understanding how the robot perceives its environment and how it responds to various stimuli.
 
-## Velocity: $\textcolor{Plum}{\texttt{eddiebot\\_vel\\_controller}}$
+## Velocity: $$\textcolor{Plum}{\texttt{eddiebot\\_vel\\_controller}}$$
 
 The eddiebot\_vel\_controller package subscribes to the <mark style="color:green;">`/cmd_vel`</mark> topic, where commands to move or rotate Eddie are published. These commands are in the Twist format which consists of linear and angular velocity components that define how Eddie should move in the environment.
 
 Upon receiving the Twist messages from the <mark style="color:green;">`/cmd_vel`</mark> topic, the eddiebot\_vel\_controller extracts the linear and angular velocity values from the Twist message and converts them into simple velocity commands. Then it publishes these commands on the <mark style="color:green;">`eddie/simple_velocity`</mark> topic.
 
-## SLAM and Navigation: $\textcolor{Plum}{\texttt{eddiebot\\_nav}}$
+## SLAM and Navigation: $$\textcolor{Plum}{\texttt{eddiebot\\_nav}}$$
 
 The eddiebot\_nav package is the central location for managing all the launch files configuring the navigation stack and SLAM tools used in the Eddie robot’s autonomous navigation capabilities. Eddie uses the slam\_toolbox for 2D SLAM. SLAM is a critical process that allows the robot to create a map of its environment while simultaneously determining its own position within that map. The `slam_toolbox` is a powerful library that performs SLAM algorithms to achieve accurate mapping and localization using sensor data from onboard sensors like LIDAR and odometry. Because Eddie is not equipped with a LIDAR, we launch the `depthimage_to_laserscan` package to extract laser scans.
 
