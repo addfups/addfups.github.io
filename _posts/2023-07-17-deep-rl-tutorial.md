@@ -107,10 +107,12 @@ The idea behind Reinforcement Learning is that an agent (an AI) will learn from 
 > Reinforcement learning is a framework for solving control tasks (also **called decision problems) by building agents that learn from the environment by interacting with it through trial and error and** receiving rewards (positive or negative) as unique feedback.
 
 
-***
-
 
 # RL Process
+
+
+***
+
 
 ## The RL Process: a loop of state, action, reward and next state
 
@@ -127,6 +129,10 @@ The agent’s goal is to _maximize_ its cumulative reward, called the expected r
 
 # The reward hypothesis
 
+
+***
+
+
 ## The reward hypothesis: the central idea of Reinforcement Learning
 
 ### **Why is the goal of the agent to maximize the expected return?**
@@ -139,7 +145,7 @@ That’s why in Reinforcement Learning, to have the best behavior, we aim to lea
 
 The Markov Property implies that our agent needs only the current state to decide what action to take and not the history of all the states and actions they took before.
 
-# State/Observation Space
+# State-Observation Space
 
 Observations/States are the information our agent gets from the environment. In the case of a video game, it can be a frame (a screenshot). In the case of the trading agent, it can be the value of a certain stock, etc.
 
@@ -349,6 +355,10 @@ In fact, most of the time, in value-based methods, you’ll use **an Epsilon-Gre
 
 # State Value Function
 
+
+***
+
+
 #### We write the state value function under a policy π like this:
 
 ![image (1).png](../assets/image (1).png){:style="display:block; margin-left:auto; margin-right:auto"}
@@ -360,6 +370,10 @@ For each state, the state-value function outputs the expected return if the agen
 
 
 # Action Value Function
+
+
+***
+
 
 #### The value of taking action a in state s under a policy π is:
 
@@ -507,6 +521,10 @@ Now we **continue to interact with this environment with our updated value funct
 
 # Off-policy vs On-policy
 
+
+***
+
+
 ## On-Policy Reinforcement Learning:
 
 In on-policy RL, the agent learns from the experiences it gathers while following its current policy. This means that the data used for training the agent comes from the same policy it is trying to improve. It updates its policy based on its current actions and their consequences.
@@ -531,6 +549,10 @@ Key characteristics of off-policy RL:
 
 
 # Q-Learning
+
+
+***
+
 
 ## **What is Q-Learning?**
 
@@ -594,6 +616,10 @@ In the beginning, **our Q-table is useless since it gives arbitrary values for e
 As the agent **explores the environment and we update the Q-table, it will give us a better and better approximation** to the optimal policy.
 
 # The Q-Learning Algorithm
+
+
+***
+
 
 ## Step 01: We initialize the Q-table
 
@@ -830,6 +856,10 @@ Therefore, Double DQN helps us reduce the overestimation of Q-values and, as a c
 
 # Introducing Policy-Gradient Methods
 
+
+***
+
+
 ## Recap of Policy-Based Methods
 
 In _policy-based methods_, we directly learn to approximate π∗ without having to learn a value function.
@@ -862,6 +892,10 @@ The difference between these two methods **lies on how we optimize the parameter
 Before diving more into how policy-gradient methods work (the objective function, policy gradient theorem, gradient ascent, etc.), let’s study the advantages and disadvantages of policy-based methods.
 
 # The Advantages and Disadvantages of Policy-Gradient Methods
+
+
+***
+
 
 ## Advantages
 
@@ -919,6 +953,10 @@ Naturally, policy-gradient methods also have some disadvantages:
 * Policy-gradient can have high variance. We’ll see in the actor-critic unit why, and how we can solve this problem.
 
 # Policy-Gradient Methods
+
+
+***
+
 
 ## The Big Picture
 
