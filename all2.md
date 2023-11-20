@@ -1230,6 +1230,7 @@ On-policy RL updates the policy while interacting with the environment, off-poli
 
 <figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
+
 # What makes Offline Reinforcement Learning Difficult?
 
 
