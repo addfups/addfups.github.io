@@ -1,7 +1,6 @@
 ---
 ---
 @charset "utf-8";
-// Define defaults for each variable.
 $base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $base-font-size:   16px !default;
 $base-font-weight: 400 !default;
@@ -11,9 +10,7 @@ $large-font-size:  $base-font-size * 1.25  !default; // 20px
 $huge-font-size:   $base-font-size * 2     !default; // 32px
 $base-line-height: 1.5 !default;
 $spacing-unit:     20px !default;
-// Width of the content area
 $content-width:    1000px !default;
-// Default color settings
 $text-color:        #333333;
 $text-second-color: #3F4650;
 $text-third-color:  #97AAC3;
@@ -23,13 +20,10 @@ $heart-color:       #fb866a;
 $theme-color: 
 	{ site.theme_color | default: "#1DA1F2" 
 }; 
-	// 
-		Default 
-			delimiter 
-				$contact-delimiter 
-					&: 
-						" 
-							{ site.contact_delimiter | default: "·" 
+	$contact-delimiter 
+		&: 
+			" 
+				{ site.contact_delimiter | default: "·" 
 	justify-content 
 		&: 
 			{ site.section_align | default: "start" 
@@ -46,7 +40,7 @@ body
 	direction: rtl 
 section 
 	.section-title {
-    text-transform: { site.section_title | default: "uppercase" 
+    text-transform: {{ site.section_title | default: "uppercase" 
 background-color: rgba($theme-color, 0.15); 
 .section-icon 
 	display: none 
