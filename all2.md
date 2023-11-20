@@ -259,9 +259,7 @@ Therefore, we must **define a rule that helps to handle this trade-off**.
 
 # Policy-Based Methods
 
-<!-- {% hint style="info" %}
 Now that we learned the RL framework, how do we solve the RL problem? In other words, how do we build an RL agent that can **select the actions that maximize its expected cumulative reward?**&#x20;
-{% endhint %} -->
 
 ## **The policy** π: the agent’s brain
 
@@ -314,9 +312,7 @@ The value of a state is the **expected discounted return** the agent can get if 
 
 ***
 
-<!-- {% hint style="info" %}
 But what does it mean to act according to our policy? After all, we don't have a policy in value-based methods since we train a value function and not a policy.
-{% endhint %} -->
 
 Here we see that our value function **defined values for each possible state.**
 
@@ -374,9 +370,7 @@ Instead of starting for each state from the beginning and calculating the return
 
 
 
-<!-- {% hint style="info" %}
 To recap, the idea of the Bellman equation is that instead of calculating each value as the sum of the expected return, **which is a long process**, we calculate the value as **the sum of immediate reward + the discounted value of the state that follows.**
-{% endhint %} -->
 
 # Monte Carlo vs Temporal Difference Learning
 
@@ -449,9 +443,7 @@ For instance, if we train a state-value function using Monte Carlo:
 
 <figure><img src="../../.gitbook/assets/TD-3.png" alt=""><figcaption></figcaption></figure>
 
-<!-- {% hint style="info" %}
 This method is called TD(0) or **one-step TD (update the value function after any individual step).**
-{% endhint %} -->
 
 ## TD Approach:
 
@@ -676,9 +668,7 @@ Then the stacked frames are processed by three convolutional layers. These layer
 
 Finally, we have a couple of fully connected layers that output a Q-value for each possible action at that state.
 
-<!-- {% hint style="info" %}
 So, the Deep Q-Learning uses a neural network to **approximate**, given a state, **the different Q-values for each possible action at that state**.
-{% endhint %} -->
 
 ***
 
@@ -711,9 +701,7 @@ The difference is that, during the training phase, instead of updating the Q-val
 
 <figure><img src="../../.gitbook/assets/Q-learning-8.png" alt=""><figcaption></figcaption></figure>
 
-<!-- {% hint style="info" %}
 In Deep Q-Learning, we create a **loss function that compares our prediction and the gradient descent to update the weights of our Deep Q-Network to approximate our Q-values better**.
-{% endhint %} -->
 
 ## The Deep Q-Learning training algorithm has _two phases_:
 
@@ -808,9 +796,7 @@ Double DQNs, or Double Deep Q-Learning neural networks, were introduced [by Hado
 
 <figure><img src="../../.gitbook/assets/Q-learning-7.png" alt=""><figcaption></figcaption></figure>
 
-<!-- {% hint style="info" %}
 When calculating the TD Target, we face a simple problem: how are we sure that **the best action for the next state is the action with the highest Q-value?**
-{% endhint %} -->
 
 We know that the accuracy of Q-values depends on what action we tried **and** what neighboring states we explored.
 
@@ -921,9 +907,7 @@ The idea is that we have a _parameterized stochastic policy_. In our case, a neu
 
 Our goal with policy-gradient is to **control the probability distribution of actions** by tuning the policy such that **good actions (that maximize the return) are sampled more frequently in the future.** Each time the agent interacts with the environment, we tweak the parameters such that good actions will be sampled more likely in the future.
 
-<!-- {% hint style="info" %}
 But **how are we going to optimize the weights using the expected return**?
-{% endhint %} -->
 
 The idea is that we’re going to **let the agent interact during an episode**. And if we win the episode, we consider that each action taken was good and must be more sampled in the future since they lead to win.
 
