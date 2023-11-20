@@ -115,7 +115,7 @@ The idea behind Reinforcement Learning is that an agent (an AI) will learn from 
 * The environment goes to a new state 𝑆₁
 * The environment gives some reward 𝑅₁​ to the Agent
 
-<figure><img src="../../.gitbook/assets/1 (1).jpeg" alt=""><figcaption></figcaption></figure>
+![1 (1).jpeg](../assets/1 (1).jpeg){:style="display:block; margin-left:auto; margin-right:auto"}
 
 The agent’s goal is to _maximize_ its cumulative reward, called the expected return.
 
@@ -143,7 +143,7 @@ There is a differentiation to make between _observation_ and _state_, however:
 
 > is **a complete description of the state of the world** (there is no hidden information). In a fully observed environment.
 
-<figure><img src="../.gitbook/assets/2 (1).jpeg" alt=""><figcaption></figcaption></figure>
+![2 (1).jpeg](../assets/2 (1).jpeg){:style="display:block; margin-left:auto; margin-right:auto"}
 
 In a chess game, we have access to the whole board information, so we receive a state from the environment. In other words, the environment is fully observed.
 
@@ -151,7 +151,7 @@ In a chess game, we have access to the whole board information, so we receive a 
 
 > is a **partial description of the state**. In a partially observed environment
 
-<figure><img src="../.gitbook/assets/3 (1).jpeg" alt=""><figcaption></figcaption></figure>
+![3 (1).jpeg](../assets/3 (1).jpeg){:style="display:block; margin-left:auto; margin-right:auto"}
 
 In Super Mario Bros, we only see the part of the level close to the player, so we receive an observation. In Super Mario Bros, we are in a partially observed environment. We receive an observation since we only see a part of the level.
 
@@ -165,7 +165,9 @@ The actions can come from a _discrete_ or _continuous space_:
 
 > The number of possible actions is finite.
 
-<figure><img src="../.gitbook/assets/4 (1).jpeg" alt=""><figcaption><p>Again, in Super Mario Bros, we have only 5 possible actions: 4 directions and jumping</p></figcaption></figure>
+![Again, in Super Mario Bros, we have only 5 possible actions: 4 directions and jumping](../assets/4 (1).jpeg){:style="display:block; margin-left:auto; margin-right:auto"}
+<p style="text-align: center;">Again, in Super Mario Bros, we have only 5 possible actions: 4 directions and jumping</p>
+
 
 In Super Mario Bros, we have a finite set of actions since we have only 5 possible actions: 4 directions and jump.
 
@@ -173,7 +175,8 @@ In Super Mario Bros, we have a finite set of actions since we have only 5 possib
 
 > The number of possible actions is infinite.
 
-<figure><img src="../.gitbook/assets/5 (1).jpeg" alt=""><figcaption><p>A Self Driving Car agent has an infinite number of possible actions since it can turn left 20°, 21,1°, 21,2°, honk, turn right 20°…</p></figcaption></figure>
+![A Self Driving Car agent has an infinite number of possible actions since it can turn left 20°, 21,1°, 21,2°, honk, turn right 20°…](../assets/5 (1).jpeg){:style="display:block; margin-left:auto; margin-right:auto"}
+<p style="text-align: center;">A Self Driving Car agent has an infinite number of possible actions since it can turn left 20°, 21,1°, 21,2°, honk, turn right 20°…</p>
 
 # Rewards and discounting
 
@@ -181,7 +184,8 @@ The reward is fundamental in RL because it’s the only feedback for the agent. 
 
 #### The cumulative reward at each time step t can be written as:
 
-<figure><img src="../.gitbook/assets/7.jpeg" alt=""><figcaption><p>The cumulative reward equals the sum of all rewards in the sequence.</p></figcaption></figure>
+![The cumulative reward equals the sum of all rewards in the sequence.](../assets/7.jpeg){:style="display:block; margin-left:auto; margin-right:auto"}
+<p style="text-align: center;">The cumulative reward equals the sum of all rewards in the sequence.</p>
 
 which is equivalent to:
 
