@@ -87,7 +87,7 @@ And the gitbook is available [here](https://zns-notes.gitbook.io/deep-reinforcem
 
 ## Offline Reinforcement Learning
 
-* [Offline vs. Online Reinforcement Learning](#offline-vs.-online-reinforcement-learning)
+* [Offline vs. Online Reinforcement Learning](#offline-vs-online-reinforcement-learning)
 * [What makes Offline Reinforcement Learning Difficult?](#what-makes-offline-reinforcement-learning-difficult)
 
 
@@ -249,7 +249,7 @@ For instance, think about Super Mario Bros: an episode begin at the launch of a 
 
 For instance, an agent that does automated stock trading. For this task, there is no starting point and terminal state. **The agent keeps running until we decide to stop it.**
 
-# The Exploration/Exploitation tradeoff
+# The Exploration-Exploitation tradeoff
 
 Remember, the goal of our RL agent is to maximize the expected cumulative reward. However, we can fall into a common trap.&#x20;
 
@@ -835,8 +835,6 @@ Instead, what we see in the pseudo-code is that we:
 
 # Double DQN
 
-###
-
 Double DQNs, or Double Deep Q-Learning neural networks, were introduced [by Hado van Hasselt.](https://papers.nips.cc/paper/3964-double-q-learning) This method **handles the problem of the overestimation of Q-values.**
 
 ![Q-learning-7.png](../assets/Q-learning-7.png){:style="display:block; margin-left:auto; margin-right:auto"}
@@ -1242,7 +1240,7 @@ The problem with implementing this advantage function is that it requires two va
 ![image (13).png](../assets/image (13).png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 
-# Offline vs. Online Reinforcement Learning
+# Offline vs Online Reinforcement Learning
 
 Deep Reinforcement Learning (RL) is a framework **to build decision-making agents**. These agents aim to learn optimal behavior (policy) by interacting with the environment through **trial and error and receiving rewards as unique feedback**.
 
