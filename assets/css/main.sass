@@ -21,45 +21,32 @@ $background-color:  #f5f5f5;
 $wrapper-color:     #ffffff;
 $heart-color:       #fb866a;
 $theme-color: 
-	{ site.theme_color | default: "#1DA1F2" 
-}; 
+	site.theme_color | default: "#1DA1F2" 
+; 
 	// 
 		Default 
 			delimiter 
 				$contact-delimiter 
 					&: 
 						" 
-							{ site.contact_delimiter | default: "·" 
-	justify-content 
+							site.contact_delimiter | default: "·" 
+ justify-content 
 		&: 
 			{ site.section_align | default: "start" 
 	border-bottom-style 
 		&: 
 			{ site.section_line | default: "dashed" 
-}";
+";
 @import
   "sanitize",
   "base",
   "responsive",
   "print"; 
 body 
-	direction: rtl 
+ direction: rtl 
 section 
-	.section-title {
-    text-transform: {{ site.section_title | default: "uppercase" background-color: rgba($theme-color, 0.15); 
-.section-icon 
-	display: none 
-} 
-	} 
-.section-content 
-	.markdown, .items {
-      a: :after {
-        display: inline-block 
-	text-rendering: auto 
-	-webkit-font-smoothing: antialiased 
-	font: var(--fa-font-solid) 
-	content: "\f08e" 
-	color: $text-third-color 
-	font-size: 0.625em 
-	margin: 0 0.375em 
-	text-decoration: none 
+	.section-title 
+	text-transform: {{ site.section_title | default: "uppercase" 
+background-color: rgba($theme-color, 0.15) 
+	.section-icon 
+ display: none 
