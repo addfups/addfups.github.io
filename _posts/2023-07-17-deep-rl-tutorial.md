@@ -92,9 +92,11 @@ And the gitbook is available [here](https://zns-notes.gitbook.io/deep-reinforcem
 
 
 
+
 # The Big Picture
 
 The idea behind Reinforcement Learning is that an agent (an AI) will learn from the environment by **interacting with it** (through trial and error) and **receiving rewards** (negative or positive) as feedback for performing actions.
+
 
 ## Formal definitions
 
@@ -103,6 +105,10 @@ The idea behind Reinforcement Learning is that an agent (an AI) will learn from 
 > Reinforcement learning is an approach for learning decision making and control from experience
 
 > Reinforcement learning is a framework for solving control tasks (also **called decision problems) by building agents that learn from the environment by interacting with it through trial and error and** receiving rewards (positive or negative) as unique feedback.
+
+
+***
+
 
 # RL Process
 
@@ -115,7 +121,7 @@ The idea behind Reinforcement Learning is that an agent (an AI) will learn from 
 * The environment goes to a new state 𝑆₁
 * The environment gives some reward 𝑅₁​ to the Agent
 
-![1 (1).jpeg](../assets/1 (1).jpeg){:style="display:block; margin-left:auto; margin-right:auto"}
+![State, Action](../assets/1_1.jpeg){:style="display:block; margin-left:auto; margin-right:auto"}
 
 The agent’s goal is to _maximize_ its cumulative reward, called the expected return.
 
