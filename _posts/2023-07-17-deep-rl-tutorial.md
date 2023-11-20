@@ -197,7 +197,8 @@ which is equivalent to:
 
 &#x20;
 
-<figure><img src="../.gitbook/assets/6.jpeg" alt=""><figcaption><p>The cumulative reward = rt+1 (rt+k+1 = rt+0+1 = rt+1)+ rt+2 (rt+k+1 = rt+1+1 = rt+2) + ...</p></figcaption></figure>
+![The cumulative reward](../assets/6.jpeg){:style="display:block; margin-left:auto; margin-right:auto"}
+<p style="text-align: center;">The cumulative reward = rt+1 (rt+k+1 = rt+0+1 = rt+1)+ rt+2 (rt+k+1 = rt+1+1 = rt+2) + ...</p>
 
 However, in reality, we can’t just add them like that. The rewards that come sooner (at the beginning of the game) **are more likely to happen** since they are more predictable than the long-term future reward.
 
@@ -205,7 +206,7 @@ However, in reality, we can’t just add them like that. The rewards that come s
 
 Let’s say your agent is this tiny mouse that can move one tile each time step, and your opponent is the cat (that can move too). The mouse’s goal is **to eat the maximum amount of cheese before being eaten by the cat.**
 
-<figure><img src="../.gitbook/assets/8 (1).jpeg" alt=""><figcaption></figcaption></figure>
+![The cumulative reward](../assets/8 (1).jpeg){:style="display:block; margin-left:auto; margin-right:auto"}
 
 * As we can see in the diagram, it’s more probable to eat the cheese near us than the cheese close to **the cat** (the closer we are to the cat, the more dangerous it is).
 * Consequently, **the reward near the cat, even if it is bigger (more cheese), will be more discounted** since we’re not really sure we’ll be able to eat it.
@@ -219,7 +220,7 @@ To discount the rewards, we proceed like this:
 
 #### Our discounted expected cumulative reward is:
 
-<figure><img src="../.gitbook/assets/9 (1).jpeg" alt=""><figcaption></figcaption></figure>
+![The cumulative reward](../assets/9 (1).jpeg){:style="display:block; margin-left:auto; margin-right:auto"}
 
 # Types of Tasks
 
@@ -229,7 +230,8 @@ A task is an **instance** of a Reinforcement Learning problem. We can have two t
 
 > In this case, we have a starting point and an ending point (**a terminal state**). **This creates an episode:** a list of States, Actions, Rewards, and new States.
 
-<figure><img src="../.gitbook/assets/10.jpeg" alt=""><figcaption></figcaption></figure>
+
+![The cumulative reward](../assets/10.jpeg){:style="display:block; margin-left:auto; margin-right:auto"}
 
 For instance, think about Super Mario Bros: an episode begin at the launch of a new Mario Level and ends **when** you’re killed or you reached the end of the level.
 
@@ -237,7 +239,7 @@ For instance, think about Super Mario Bros: an episode begin at the launch of a 
 
 > These are tasks that continue forever (**no terminal state**). In this case, the agent must **learn how to choose the best actions and simultaneously interact with the environment.**
 
-<figure><img src="../.gitbook/assets/11.jpeg" alt=""><figcaption></figcaption></figure>
+![The cumulative reward](../assets/11.jpeg){:style="display:block; margin-left:auto; margin-right:auto"}
 
 For instance, an agent that does automated stock trading. For this task, there is no starting point and terminal state. **The agent keeps running until we decide to stop it.**
 
@@ -250,17 +252,17 @@ Remember, the goal of our RL agent is to maximize the expected cumulative reward
 
 Let’s take an example:
 
-<figure><img src="../.gitbook/assets/exp_1.jpg" alt=""><figcaption></figcaption></figure>
+![The cumulative reward](../assets/exp_1.jpg){:style="display:block; margin-left:auto; margin-right:auto"}
 
 In this game, our mouse can have an **infinite amount of small cheese** (+1 each). But at the top of the maze, there is a gigantic sum of cheese (+1000).
 
 #### If we only focus on exploitation, our agent will never reach the gigantic sum of cheese. Instead, it will only exploit **the nearest source of rewards,** even if this source is small (exploitation).
 
-<figure><img src="../.gitbook/assets/expexpltradeoff (copy).jpg" alt=""><figcaption></figcaption></figure>
+![The cumulative reward](../assets/expexpltradeoff (copy).jpg){:style="display:block; margin-left:auto; margin-right:auto"}
 
 #### But if our agent does a little bit of exploration, it can **discover the big reward** (the pile of big cheese).
 
-<figure><img src="../.gitbook/assets/expexpltradeoff.jpg" alt=""><figcaption></figcaption></figure>
+![The cumulative reward](../assets/expexpltradeoff.jpg){:style="display:block; margin-left:auto; margin-right:auto"}
 
 This is what we call the exploration/exploitation trade-off. We need to balance how much we **explore the environment** and how much we **exploit what we know about the environment.**
 
@@ -274,7 +276,9 @@ Now that we learned the RL framework, how do we solve the RL problem? In other w
 
 The Policy π is the brain of our Agent, it’s the function that tells us what action to take given the state we are in. So it defines the agent’s behavior at a given time.
 
-<figure><img src="../.gitbook/assets/13 (1).jpeg" alt=""><figcaption><p>Think of policy as the brain of our agent, the function that will tell us the action to take given a state</p></figcaption></figure>
+![Think of policy as the brain of our agent, the function that will tell us the action to take given a state](../assets/13 (1).jpeg){:style="display:block; margin-left:auto; margin-right:auto"}
+<p style="text-align: center;">Think of policy as the brain of our agent, the function that will tell us the action to take given a state</p>
+
 
 This Policy is **the function we want to learn**, our goal is to find the optimal policy π\*, the policy that **maximizes expected return** when the agent acts according to it. We find this π\* **through training.**
 
@@ -287,7 +291,8 @@ There are two approaches to train our agent to find this optimal policy π\*:
 
 ### In Policy Based methods, **we learn a policy function directly**.
 
-<figure><img src="../.gitbook/assets/14 (1).jpeg" alt=""><figcaption><p><em>As we can see here, the policy (deterministic) <strong>directly indicates the action to take for each step</strong></em>.</p></figcaption></figure>
+![As we can see here, the policy (deterministic) directly indicates the action to take for each step](../assets/14 (1).jpeg){:style="display:block; margin-left:auto; margin-right:auto"}
+<p style="text-align: center;">As we can see here, the policy (deterministic) directly indicates the action to take for each step</p>
 
 This function will define a mapping from each state to the best corresponding action. Alternatively, it could define a **probability distribution over the set of possible actions at that state** . We have two types of policies:
 
@@ -295,9 +300,10 @@ This function will define a mapping from each state to the best corresponding ac
 
 > a policy at  a given state will **always return the same action**
 
-<figure><img src="../.gitbook/assets/16.jpeg" alt=""><figcaption><p>action = policy(state)</p></figcaption></figure>
+![action = policy(state)](../assets/16.jpeg){:style="display:block; margin-left:auto; margin-right:auto"}
+<p style="text-align: center;">action = policy(state)</p>
 
-<figure><img src="../.gitbook/assets/15 (1).jpeg" alt=""><figcaption></figcaption></figure>
+![action = policy(state)](../assets/15 (1).jpeg){:style="display:block; margin-left:auto; margin-right:auto"}
 
 ### _Stochastic_:
 
@@ -305,17 +311,18 @@ This function will define a mapping from each state to the best corresponding ac
 >
 >
 
-<figure><img src="../.gitbook/assets/17.jpeg" alt=""><figcaption><p>policy(actions | state) = probability distribution over the set of actions given the current state</p></figcaption></figure>
+![policy(actions | state) = probability distribution over the set of actions given the current state)](../assets/17.jpeg){:style="display:block; margin-left:auto; margin-right:auto"}
+<p style="text-align: center;">policy(actions | state) = probability distribution over the set of actions given the current state</p>
 
 _Given an initial state, our stochastic policy will output probability distributions over the possible actions at that state._
 
-<figure><img src="../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+![image (21).png](../assets/image (21).png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 # Value-Based Methods
 
 In value-based methods, instead of learning a policy function, we **learn a value function** that maps a state to the expected value **of being at that state.**
 
-<figure><img src="../.gitbook/assets/19.jpeg" alt=""><figcaption></figcaption></figure>
+![19.jpeg](../assets/19.jpeg){:style="display:block; margin-left:auto; margin-right:auto"}
 
 The value of a state is the **expected discounted return** the agent can get if it **starts in that state, and then acts according to our policy.**
 
@@ -325,7 +332,8 @@ But what does it mean to act according to our policy? After all, we don't have a
 
 Here we see that our value function **defined values for each possible state.**
 
-<figure><img src="../.gitbook/assets/image (4).png" alt=""><figcaption><p>Thanks to our value function, at each step our policy will select the state with the biggest value defined by the value function: -7, then -6, then -5 (and so on) to attain the goal.</p></figcaption></figure>
+![Thanks to our value function, at each step our policy will select the state with the biggest value defined by the value function: -7, then -6, then -5 (and so on) to attain the goal.](../assets/image (4).png){:style="display:block; margin-left:auto; margin-right:auto"}
+<p style="text-align: center;">Thanks to our value function, at each step our policy will select the state with the biggest value defined by the value function: -7, then -6, then -5 (and so on) to attain the goal.</p>
 
 Since the policy is not trained/learned, **we need to specify its behavior.** For instance, if we want a policy that, given the value function, will take actions that always lead to the biggest reward, **we’ll create a Greedy Policy.**
 
@@ -335,7 +343,7 @@ In value-based training, **finding an optimal value function (denoted Q\* or V\*
 
 Finding an optimal value function leads to having an optimal policy.
 
-<figure><img src="../.gitbook/assets/20 (1).jpeg" alt=""><figcaption></figcaption></figure>
+![20 (1).jpeg](../assets/20 (1).jpeg){:style="display:block; margin-left:auto; margin-right:auto"}
 
 In fact, most of the time, in value-based methods, you’ll use **an Epsilon-Greedy Policy** that handles the exploration/exploitation trade-off.
 
@@ -343,17 +351,19 @@ In fact, most of the time, in value-based methods, you’ll use **an Epsilon-Gre
 
 #### We write the state value function under a policy π like this:
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+![image (1).png](../assets/image (1).png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 For each state, the state-value function outputs the expected return if the agent **starts at that state** and then follows the policy forever afterward (for all future timesteps, if you prefer).
 
-<figure><img src="../.gitbook/assets/image (7).png" alt=""><figcaption><p>If we take the state with value -7: it's the expected return starting at that state and taking actions according to our policy (greedy policy), so right, right, right, down, down, right, right.</p></figcaption></figure>
+![If we take the state with value -7: it's the expected return starting at that state and taking actions according to our policy (greedy policy), so right, right, right, down, down, right, right.](../assets/image (7).png){:style="display:block; margin-left:auto; margin-right:auto"}
+<p style="text-align: center;">If we take the state with value -7: it's the expected return starting at that state and taking actions according to our policy (greedy policy), so right, right, right, down, down, right, right.</p>
+
 
 # Action Value Function
 
 #### The value of taking action a in state s under a policy π is:
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+![image (5).png](../assets/image (5).png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 In the action-value function, for each state and action pair, the action-value function **outputs the expected return** if the agent starts in that state, takes that action, and then follows the policy forever after.
 
@@ -371,7 +381,7 @@ Instead of calculating the expected return for each state or each state-action p
 
 The Bellman equation is a recursive equation that works like this:
 
-<figure><img src="../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+![image (22).png](../assets/image (22).png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 Instead of starting for each state from the beginning and calculating the return, we can consider the value of any state as:
 
@@ -398,11 +408,11 @@ Monte Carlo waits until the end of the episode, calculates 𝐺𝑡 (return) and
 
 So it requires a **complete episode of interaction before updating our value function.**
 
-<figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
+![image (20).png](../assets/image (20).png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 ### If we take an example:
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+![image (10).png](../assets/image (10).png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 * We always start the episode **at the same starting point.**
 * **The agent takes actions using the policy**. For instance, using an Epsilon Greedy Strategy, a policy that alternates between exploration (random actions) and exploitation.
@@ -426,7 +436,7 @@ For instance, if we train a state-value function using Monte Carlo:
 * Our learning rate (lr) is 0.1 and our discount rate is 1 (= no discount).
 * Our mouse **explores the environment and takes random actions.**
 
-<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+![image (15).png](../assets/image (15).png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 * The mouse made more than 10 steps, so the episode ends.&#x20;
 * We have a list of state, action, rewards, next\_state, **we need to calculate the return** 𝐺𝑡.
@@ -450,7 +460,7 @@ For instance, if we train a state-value function using Monte Carlo:
 
 ## **TD approach:**
 
-<figure><img src="../../.gitbook/assets/TD-3.png" alt=""><figcaption></figcaption></figure>
+![TD-3.png](../assets/TD-3.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 This method is called TD(0) or **one-step TD (update the value function after any individual step).**
 
@@ -469,7 +479,7 @@ Now we continue to interact with this environment with our updated value functio
 
 ### If we take an example:
 
-<figure><img src="../../.gitbook/assets/TD-2.png" alt=""><figcaption></figcaption></figure>
+![TD-2.png](../assets/TD-2.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 * We initialize our value function **so that it returns 0 value for each state.**
 * Our learning rate (lr) is 0.1 and our discount rate is 1 (= no discount).
@@ -492,7 +502,7 @@ Now we **continue to interact with this environment with our updated value funct
 * With _Monte Carlo_, we update the value function from a complete episode, and so we **use the actual accurate discounted return of this episode.**
 * With _TD Learning_, we update the value function from a step, and we replace 𝐺𝑡, which we don’t know, with **an estimated return called the TD target.**
 
-<figure><img src="../../.gitbook/assets/Summary.png" alt=""><figcaption></figcaption></figure>
+![Summary.png](../assets/Summary.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 
 # Off-policy vs On-policy
@@ -556,19 +566,19 @@ Let’s go through an example of a maze.
 
 
 
-<figure><img src="../../.gitbook/assets/Maze-1.png" alt=""><figcaption></figcaption></figure>
+![Maze-1.png](../assets/Maze-1.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 The Q-table is initialized. That’s why all values are = 0. This table **contains, for each state and action, the corresponding state-action values.**
 
-<figure><img src="../../.gitbook/assets/Maze-2.png" alt=""><figcaption></figcaption></figure>
+![Maze-2.png](../assets/Maze-2.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 Here we see that the **state-action value of the initial state and going up is 0:**
 
-<figure><img src="../../.gitbook/assets/Maze-3.png" alt=""><figcaption></figcaption></figure>
+![Maze-3.png](../assets/Maze-3.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 > #### So: the Q-function uses a Q-table **that has the value of each state-action pair.** Given a state and action, **our Q-function will search inside its Q-table to output the value.**
 
-<figure><img src="../../.gitbook/assets/Q-function-2.png" alt=""><figcaption></figcaption></figure>
+![Q-function-2.png](../assets/Q-function-2.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 ***
 
@@ -591,7 +601,7 @@ We need to initialize the Q-table for each state-action pair. **Most of the time
 
 
 
-<figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
+![image (17).png](../assets/image (17).png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 ***
 
@@ -606,7 +616,7 @@ The idea is that, with an initial value of ɛ = 1.0:
 
 
 
-<figure><img src="../../.gitbook/assets/Q-learning-5.png" alt=""><figcaption></figcaption></figure>
+![Q-learning-5.png](../assets/Q-learning-5.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 At the beginning of the training, **the probability of doing exploration will be huge since ɛ is very high, so most of the time, we’ll explore.** But as the training goes on, and consequently our **Q-table gets better and better in its estimations, we progressively reduce the epsilon value** since we will need less and less exploration and more exploitation.
 
@@ -624,11 +634,11 @@ Remember that in TD Learning, we update our policy or value function (depending 
 
 To produce our TD target, **we used the immediate reward** 𝑅𝑡**+1​ plus the discounted value of the next state**, computed by finding the action that maximizes the current Q-function at the next state. (We call that bootstrap).
 
-<figure><img src="../../.gitbook/assets/Q-learning-7.png" alt=""><figcaption></figcaption></figure>
+![Q-learning-7.png](../assets/Q-learning-7.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 #### Therefore, our 𝑄⟮𝑆𝑡**,** 𝐴𝑡⟯ **update formula goes like this:**
 
-<figure><img src="../../.gitbook/assets/Q-learning-8.png" alt=""><figcaption></figcaption></figure>
+![Q-learning-8.png](../assets/Q-learning-8.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 #### This means that to update our 𝑄⟮𝑆𝑡**,** 𝐴𝑡⟯**:**
 
@@ -660,14 +670,14 @@ possible observations (for comparison, we have approximately
 
 This neural network will approximate, given a state, the different Q-values for each possible action at that state. And that’s exactly what Deep Q-Learning does.
 
-<figure><img src="../.gitbook/assets/deep.jpg" alt=""><figcaption></figcaption></figure>
+![deep.jpg](../assets/deep.jpg){:style="display:block; margin-left:auto; margin-right:auto"}
 
 
 # The Deep Q-Network (DQN)
 
 This is the architecture of our Deep Q-Learning network:
 
-<figure><img src="../.gitbook/assets/deep-q-network.jpg" alt=""><figcaption></figcaption></figure>
+![deep-q-network.jpg](../assets/deep-q-network.jpg){:style="display:block; margin-left:auto; margin-right:auto"}
 
 > As input, we take a **stack of 4 frames** passed through the network as a state and output a **vector of Q-values for each possible action at that state**. Then, like with Q-Learning, we just need to use our epsilon-greedy policy to select which action to take.
 
@@ -692,7 +702,7 @@ We need to **preprocess the input**. It’s an essential step since we want to *
 
 Let’s take an example with the game of Pong. When you see this frame:
 
-<figure><img src="../.gitbook/assets/image (16).png" alt=""><figcaption></figcaption></figure>
+![image (16).png](../assets/image (16).png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 Can you tell me where the ball is going?&#x20;
 
@@ -700,7 +710,7 @@ Can you tell me where the ball is going?&#x20;
 
 But what if I add three more frames? **Here you can see** ball is going? Here, you can see **that the ball is going to the right**.
 
-<figure><img src="../.gitbook/assets/image (18).png" alt=""><figcaption></figcaption></figure>
+![image (18).png](../assets/image (18).png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 # The Deep Q-Learning Algorithm
 
@@ -708,7 +718,7 @@ We learned that Deep Q-Learning **uses a deep neural network to approximate the 
 
 The difference is that, during the training phase, instead of updating the Q-value of a state-action pair directly as we have done with Q-Learning:
 
-<figure><img src="../../.gitbook/assets/Q-learning-8.png" alt=""><figcaption></figcaption></figure>
+![Q-learning-8.png](../assets/Q-learning-8.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 In Deep Q-Learning, we create a **loss function that compares our prediction and the gradient descent to update the weights of our Deep Q-Network to approximate our Q-values better**.
 
@@ -717,7 +727,7 @@ In Deep Q-Learning, we create a **loss function that compares our prediction and
 1. **Sampling**: we perform actions and **store the observed experience tuples in a replay memory**.
 2. **Training**: Select a **small batch of tuples randomly and learn from this batch using a gradient descent update step**.
 
-<figure><img src="../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
+![image (19).png](../assets/image (19).png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 This is not the only difference compared with Q-Learning.
 
@@ -760,13 +770,13 @@ But we **don’t have any idea of the real TD target**. We need to estimate it. 
 
 ### Q-Target
 
-<figure><img src="../../.gitbook/assets/Q-learning-7.png" alt=""><figcaption></figcaption></figure>
+![Q-learning-7.png](../assets/Q-learning-7.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 ### Q-Loss
 
 
 
-<figure><img src="../../.gitbook/assets/Q-learning-8.png" alt=""><figcaption></figcaption></figure>
+![Q-learning-8.png](../assets/Q-learning-8.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 However, the problem is that we are using the same parameters (weights) for estimating the TD target **and** the Q-value. Consequently, there is a significant correlation between the TD target and the parameters we are changing.
 
@@ -780,17 +790,17 @@ This can lead to significant oscillation in training.
 
 It’s like if you were a cowboy (the Q estimation) and you wanted to catch a cow (the Q-target). Your goal is to get closer (reduce the error).
 
-<figure><img src="../../.gitbook/assets/qtarget-1.png" alt=""><figcaption></figcaption></figure>
+![qtarget-1.png](../assets/qtarget-1.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 At each time step, you’re trying to approach the cow, which also moves at each time step (because you use the same parameters).
 
-<figure><img src="../../.gitbook/assets/qtarget-2.png" alt=""><figcaption></figcaption></figure>
+![qtarget-2.png](../assets/qtarget-2.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
-<figure><img src="../../.gitbook/assets/qtarget-3.png" alt=""><figcaption></figcaption></figure>
+![qtarget-3.png](../assets/qtarget-3.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 This leads to a bizarre path of chasing (a significant oscillation in training).
 
-<figure><img src="../../.gitbook/assets/qtarget-4.png" alt=""><figcaption></figcaption></figure>
+![qtarget-4.png](../assets/qtarget-4.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 Instead, what we see in the pseudo-code is that we:
 
@@ -803,7 +813,7 @@ Instead, what we see in the pseudo-code is that we:
 
 Double DQNs, or Double Deep Q-Learning neural networks, were introduced [by Hado van Hasselt.](https://papers.nips.cc/paper/3964-double-q-learning) This method **handles the problem of the overestimation of Q-values.**
 
-<figure><img src="../../.gitbook/assets/Q-learning-7.png" alt=""><figcaption></figcaption></figure>
+![Q-learning-7.png](../assets/Q-learning-7.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 When calculating the TD Target, we face a simple problem: how are we sure that **the best action for the next state is the action with the highest Q-value?**
 
@@ -826,13 +836,13 @@ In _policy-based methods_, we directly learn to approximate π∗ without having
 
 #### The idea is **to parameterize the policy**. For instance, using a neural network πθ​, this policy will output a probability distribution over actions (stochastic policy).
 
-<figure><img src="../.gitbook/assets/stochastic_policy.png" alt=""><figcaption></figcaption></figure>
+![stochastic_policy.png](../assets/stochastic_policy.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 > Our objective then is **to maximize the performance of the parameterized policy using gradient ascent**.
 
 To do that, we control the parameter that will affect the distribution of actions over a state.
 
-<figure><img src="../.gitbook/assets/policy_based.png" alt=""><figcaption></figcaption></figure>
+![policy_based.png](../assets/policy_based.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 Consequently, thanks to policy-based methods, we can directly optimize our policy πθ​ to output a probability distribution over actions 𝜋𝜃⟮𝑎|𝑠⟯ that leads to the best cumulative return.
 
@@ -868,13 +878,13 @@ Policy-gradient methods can **learn a stochastic policy while value functions ca
 
 Let’s take an example: we have an intelligent vacuum cleaner whose goal is to suck the dust and avoid killing the hamsters.
 
-<figure><img src="../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+![image (3).png](../assets/image (3).png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 Our vacuum cleaner can only perceive where the walls are.
 
 The problem is that the **two red (colored) states are aliased states because the agent perceives an upper and lower wall for each**.
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+![image (2).png](../assets/image (2).png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 Under a deterministic policy, the policy will either always move right when in a red state or always move left. **Either case will cause our agent to get stuck and never suck the dust**.
 
@@ -882,7 +892,7 @@ Under a value-based Reinforcement learning algorithm, we learn a **quasi-determi
 
 On the other hand, an optimal stochastic policy **will randomly move left or right in red (colored) states**. Consequently, **it will not be stuck and will reach the goal state with a high probability**.
 
-<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
+![image (14).png](../assets/image (14).png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 ### Policy-gradient methods are more effective in high-dimensional action spaces and continuous actions spaces
 
@@ -924,7 +934,7 @@ So for each state-action pair, we want to increase the P(a s): the probability o
 
 The Policy-gradient algorithm (simplified) looks like this:
 
-<figure><img src="../../.gitbook/assets/pg_bigpicture.jpg" alt=""><figcaption></figcaption></figure>
+![pg_bigpicture.jpg](../assets/pg_bigpicture.jpg){:style="display:block; margin-left:auto; margin-right:auto"}
 
 ***
 
@@ -938,7 +948,7 @@ Where πθ(atst) is the probability of the agent selecting action atat​ from s
 
 The _objective function_ gives us the **performance of the agent** given a trajectory (state action sequence without considering reward (contrary to an episode)), and it outputs the _expected cumulative reward_.
 
-<figure><img src="../../.gitbook/assets/objective.jpg" alt=""><figcaption></figcaption></figure>
+![objective.jpg](../assets/objective.jpg){:style="display:block; margin-left:auto; margin-right:auto"}
 
 Let’s give some more details on this formula:
 
@@ -946,7 +956,7 @@ Let’s give some more details on this formula:
 
 The _expected return_ (also called expected cumulative reward), is the weighted average (where the weights are given by P(τ;θ) of all possible values that the return R(τ)can take).
 
-<figure><img src="../../.gitbook/assets/expected_reward.png" alt=""><figcaption></figcaption></figure>
+![expected_reward.png](../assets/expected_reward.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 ### R(τ)
 
@@ -956,7 +966,7 @@ Return from an arbitrary trajectory. To take this quantity and use it to calcula
 
 Probability of each possible trajectory ττ (that probability depends on θθ since it defines the policy that it uses to select the actions of the trajectory which has an impact of the states visited).
 
-<figure><img src="../../.gitbook/assets/probability.png" alt=""><figcaption></figcaption></figure>
+![probability.png](../assets/probability.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 ### J(θ)
 
@@ -964,7 +974,7 @@ Expected return, we calculate it by summing for all trajectories, the probabilit
 
 Our objective then is to maximize the expected cumulative reward by finding the θ that will output the best action probability distributions:
 
-<figure><img src="../../.gitbook/assets/max_objective.png" alt=""><figcaption></figcaption></figure>
+![max_objective.png](../assets/max_objective.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 # The Policy-Gradient Theorem
 
@@ -1056,7 +1066,7 @@ In a loop:
 * Use the policy $$\pi_{\theta}$$ to collect an episode $$\tau$$
 * Use the episode to estimate the gradient $$\hat{g} = \nabla_{\theta} J(\theta)$$
 
-<figure><img src="../../.gitbook/assets/policy_gradient_one.png" alt=""><figcaption></figcaption></figure>
+![policy_gradient_one.png](../assets/policy_gradient_one.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 * Update the weights of the policy: $$\theta \leftarrow \theta + \alpha \hat{g}$$
 
@@ -1069,13 +1079,13 @@ We can interpret this update as follows:
 
 We can also **collect multiple episodes (trajectories)** to estimate the gradient:
 
-<figure><img src="../../.gitbook/assets/policy_gradient_multiple.png" alt=""><figcaption></figcaption></figure>
+![policy_gradient_multiple.png](../assets/policy_gradient_multiple.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 # The Problem of Variance in Reinforce
 
 In Reinforce, we want to **increase the probability of actions in a trajectory proportionally to how high the return is.**
 
-<figure><img src="../../.gitbook/assets/pg.jpg" alt=""><figcaption></figcaption></figure>
+![pg.jpg](../assets/pg.jpg){:style="display:block; margin-left:auto; margin-right:auto"}
 
 * If the **return is high**, we will **push up** the probabilities of the (state, action) combinations.
 * Otherwise, if the **return is low**, it will **push down** the probabilities of the (state, action) combinations.
@@ -1090,7 +1100,7 @@ Given the stochasticity of the environment (random events during an episode) and
 
 We can also **collect multiple episodes (trajectories)** to estimate the gradient:
 
-<figure><img src="../../.gitbook/assets/variance.png" alt=""><figcaption></figcaption></figure>
+![variance.png](../assets/variance.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 
 # Introducing Actor-Critic Methods
@@ -1116,7 +1126,7 @@ The solution to reducing the variance of the Reinforce algorithm and training ou
 
 To understand the Actor-Critic, imagine you’re playing a video game. You can play with a friend that will provide you with some feedback. You’re the Actor and your friend is the Critic.
 
-<figure><img src="../.gitbook/assets/ac.png" alt=""><figcaption></figcaption></figure>
+![ac.png](../assets/ac.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 You don’t know how to play at the beginning, **so you try some actions randomly**. The Critic observes your action and **provides feedback**.
 
@@ -1144,25 +1154,25 @@ At each timestep, $$t$$, we get the current state $$S_t$$ from the environment a
 
 Our Policy takes the state and **outputs an action** $$A_t$$ ​.
 
-<figure><img src="../.gitbook/assets/step1.png" alt=""><figcaption></figcaption></figure>
+![step1.png](../assets/step1.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 ## Step 2:
 
 The Critic takes that action also as input and, using $$S_t$$ and $$A_t$$ **computes the value of taking that action at that state: the Q-value**.
 
-<figure><img src="../.gitbook/assets/step2.png" alt=""><figcaption></figcaption></figure>
+![step2.png](../assets/step2.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 ## Step 3:
 
 The action $$A_t$$ performed in the environment outputs a new state $$S_{t+1}$$​ and a reward $$R_{t+1}$$
 
-<figure><img src="../.gitbook/assets/step3.png" alt=""><figcaption></figcaption></figure>
+![step3.png](../assets/step3.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 ## Step 4:
 
 The Actor updates its policy parameters using the Q-value.
 
-<figure><img src="../.gitbook/assets/step4.png" alt=""><figcaption></figcaption></figure>
+![step4.png](../assets/step4.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 ## Step 5:
 
@@ -1170,7 +1180,7 @@ Thanks to its updated parameters, the Actor produces the next action to take at 
 
 The Critic then updates its value parameters.
 
-<figure><img src="../.gitbook/assets/step5.png" alt=""><figcaption></figcaption></figure>
+![step5.png](../assets/step5.png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 # Adding Advantage in Actor-Critic (A2C)
 
@@ -1180,7 +1190,7 @@ The idea is that the Advantage function calculates the relative advantage of an 
 
 &#x20;
 
-<figure><img src="../.gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
+![image (11).png](../assets/image (11).png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 In other words, this function calculates **the extra reward we get if we take this action at that state compared to the mean reward we get at that state**.
 
@@ -1191,7 +1201,7 @@ The extra reward is what’s beyond the expected value of that state.
 
 The problem with implementing this advantage function is that it requires two value functions — $$Q(s,a)$$  and $$V(s)$$. Fortunately, **we can use the TD error as a good estimator of the advantage function.**
 
-<figure><img src="../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
+![image (13).png](../assets/image (13).png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 
 # Offline vs. Online Reinforcement Learning
@@ -1202,7 +1212,7 @@ The agent’s goal **is to maximize its cumulative reward**, called return. Beca
 
 Deep Reinforcement Learning agents **learn with batches of experience**. The question is, how do they collect it?:
 
-<figure><img src="../.gitbook/assets/offlinevsonlinerl.gif" alt=""><figcaption></figcaption></figure>
+![offlinevsonlinerl.gif](../assets/offlinevsonlinerl.gif){:style="display:block; margin-left:auto; margin-right:auto"}
 
 > In _online reinforcement learning_, which is what we’ve learned during this course, the agent **gathers data directly**: it collects a batch of experience by **interacting with the environment**. Then, it uses this experience immediately (or via some replay buffer) to learn from it (update its policy).
 
@@ -1219,7 +1229,7 @@ The process is as follows:
 
 On-policy RL updates the policy while interacting with the environment, off-policy RL learns from data collected by a different behavior policy, and offline RL learns from a fixed dataset without interacting with the environment. Each approach has its own advantages and use cases depending on the specific requirements of the RL problem at hand.
 
-<figure><img src="../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+![image (23).png](../assets/image (23).png){:style="display:block; margin-left:auto; margin-right:auto"}
 
 
 # What makes Offline Reinforcement Learning Difficult?
