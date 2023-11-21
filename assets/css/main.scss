@@ -24,8 +24,8 @@ $content-width:    1000px !default;
 $text-color:        #000;
 $text-second-color: #111;
 $text-third-color:  #222;
-$background-color:  #333;
-$wrapper-color:     #ffffff;
+$background-color:  #000;
+$wrapper-color:     #000;
 $heart-color:       #fb866a;
 $theme-color:       {{ site.theme_color | default: "#fff" }};
 
