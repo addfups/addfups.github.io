@@ -27,7 +27,7 @@ $text-third-color:  #222;
 $background-color:  #333;
 $wrapper-color:     #ffffff;
 $heart-color:       #fb866a;
-$theme-color:       {{ site.theme_color | default: "#444" }};
+$theme-color:       {{ site.theme_color | default: "#fff" }};
 
 // Default delimiter
 $contact-delimiter: "{{ site.contact_delimiter | default: "·" }}";
