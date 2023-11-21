@@ -213,7 +213,7 @@ education:
       major: Bachelor of Science, Computer Engineering
       degree: Bachelor
       description: |
-        # Additional information for this institution.
+# Additional information for this institution.
         + GPA: 3.58/4 (17.40/20.00)
         + Ranked in the top 12% based on the GPA over the first three years of the enrolling class of 2019.
 
