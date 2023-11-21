@@ -1,6 +1,6 @@
 basic:
-  name: Foo Bar                      # name
-  title: Backend Developer           # job title
+  name: Zahra Niazi                      # name
+  title:            # job title
   avatar:
     show: true                       # show or hide avatar
     path: /assets/images/profile.png # avatar file path
@@ -8,9 +8,9 @@ basic:
 contact:
   # meta
   location: Beijing, China # location
-  email: me@example.com    # email address
-  phone: +86-111-2222-3333 # phone number, format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
-  website: example.com     # site URL without schema, like example.com, will automatically prepand "https://"
+  email: zahra.niazi2001@gmail.com    # email address
+  phone: (98)9152571646 # phone number, format is "+[Country Code] [Area Code (if applicable)] [Local Phone Number]"
+  website: zahra-niazi.github.io     # site URL without schema, like example.com, will automatically prepand "https://"
 
   gender:                  # gender or pronoun
   birthday:                # birthday
@@ -28,7 +28,7 @@ contact:
   threema:                 # userid            | https://threema.id/userid
 
   # programmer
-  github:                  # username          | https://github.com/username
+  github: https://github.com/zahra-niazi                 # username          | https://github.com/username
   gitlab:                  # username          | https://gitlab.com/username
   bitbucket:               # username          | https://bitbucket.com/username
   stackoverflow:           # id or id/username | https://stackoverflow.com/users/id/username
@@ -59,7 +59,7 @@ contact:
   artstation:              # username          | https://www.artstation.com/username
 
   # other cv
-  linkedin:                # username          | https://linkedin.com/in/username
+  linkedin: https://www.linkedin.com/in/zahra-niaziii/               # username          | https://linkedin.com/in/username
   indeed:                  # resumeid          | https://my.indeed.com/p/resumeid
   xing:                    # username          | https://www.xing.com/profile/username
   fiverr:                  # username          | https://www.fiverr.com/username
@@ -71,7 +71,7 @@ contact:
   instagram:               # username          | https://instagram.com/username
   unsplash:                # username          | https://unsplash.com/@username
   _500px:                  # username          | https://500px.com/p/username
-  youtube:                 # username          | https://www.youtube.com/@username
+  youtube: https://www.youtube.com/@zahraniazii               # username          | https://www.youtube.com/@username
   tiktok:                  # username          | https://www.tiktok.com/@username
   quora:                   # username          | https://www.quora.com/profile/username
   zhihu:                   # username          | https://www.zhihu.com/people/username
@@ -88,8 +88,8 @@ profile:
     A well-crafted profile section can help to grab the attention of potential employers and encourage them to read on and learn more about the applicant's qualifications and experience.
 
 experience:
-  show: true
-  order: 2
+  show: false
+  order: 3
   title: Experiences
   description: |
     The experiences section in a resume is a section where you list your previous work experiences and accomplishments. It typically includes information about your previous job titles, companies you worked for, the dates of your employment, and your key responsibilities and achievements in each role. This section is important because it gives potential employers a sense of your work history and the skills and expertise you have developed over time. It can also help demonstrate your ability to contribute value to a new organization based on your past achievements.
@@ -119,7 +119,7 @@ experience:
 
 project:
   show: true
-  order: 3
+  order: 2
   title: Projects
   description: |
     The project section in a resume is a section where you can highlight any significant projects that you have completed during your education, work experience, or personal endeavors. This section provides a detailed description of your projects that can showcase your skills, abilities, and achievements.
