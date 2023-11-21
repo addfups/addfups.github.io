@@ -21,11 +21,11 @@ $spacing-unit:     20px !default;
 $content-width:    1000px !default;
 
 // Default color settings
-$text-color:        #000;
-$text-second-color: #111;
-$text-third-color:  #222;
-$background-color:  #000;
-$wrapper-color:     #000;
+$text-color:        #212228;
+$text-second-color: #3F4650;
+$text-third-color:  #97AAC3;
+$background-color:  #fff;
+$wrapper-color:     #ffffff;
 $heart-color:       #fb866a;
 $theme-color:       {{ site.theme_color | default: "#fff" }};
 
