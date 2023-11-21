@@ -24,10 +24,10 @@ $content-width:    1000px !default;
 $text-color:        #000;
 $text-second-color: #111;
 $text-third-color:  #222;
-$background-color:  #f5f5f5;
+$background-color:  #333;
 $wrapper-color:     #ffffff;
 $heart-color:       #fb866a;
-$theme-color:       {{ site.theme_color | default: "#1DA1F2" }};
+$theme-color:       {{ site.theme_color | default: "#444" }};
 
 // Default delimiter
 $contact-delimiter: "{{ site.contact_delimiter | default: "·" }}";
