@@ -79,7 +79,7 @@ contact:
   strava:                  # useid             | https://www.strava.com/athletes/userid
 
 profile:
-  show: true
+  show: false
   order: 1
   title: Profile
   description: |
@@ -207,25 +207,25 @@ education:
     In addition to basic information about your education, you may also want to include any academic honors or awards you received, relevant coursework or projects, and your GPA if it is 3.0 or above. If you have recently graduated and do not have much work experience yet, highlighting your education and academic achievements can help demonstrate your potential to succeed in the workplace.
 
   items:
-    - institution: Example University
+    - institution: Ferdowsi University of Mashhad
       link: '#'
-      date: 2015 - 2018
-      major: Machine Learning
-      degree: Master
-      description: |
-        Additional information for this institution.
-        + First
-        + Second
-
-    - institution: Example University
-      link:
-      date: 2011 - 2015
-      major: Computer Science
+      date: 2019 - 2023
+      major: Bachelor of Science, Computer Engineering
       degree: Bachelor
       description: |
-        Additional information for this institution.
-        + First
-        + Second
+        # Additional information for this institution.
+        + GPA: 3.58/4 (17.40/20.00)
+        + Ranked in the top 12% based on the GPA over the first three years of the enrolling class of 2019.
+
+    # - institution: Example University
+    #   link:
+    #   date: 2011 - 2015
+    #   major: Computer Science
+    #   degree: Bachelor
+    #   description: |
+    #     Additional information for this institution.
+    #     + First
+    #     + Second
 
 certificate:
   show: true
