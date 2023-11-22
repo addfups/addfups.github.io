@@ -186,21 +186,21 @@ project:
 
 evaluation:
   show: true
-  order: 15
+  order: 4
   title: Selected Courses
   items: 
     - course: Reinforcement Learning (Graduate Course) 
-      grade: (4/4)
+      grade: 4/4
     - course: Neural Networks (Graduate Course)
-      grade: (3/4)
+      grade: 3/4
     - course: Robotics
-      grade: (4/4)
+      grade: 4/4
     - course: Fundamentals of Computer Vision
-      grade: (4/4)
+      grade: 4/4
     - course: Fundamentals of Computational Intelligence
-      grade: (4/4)
+      grade: 4/4
     - course: Fundamentals and Applications of Artificial Intelligence
-      grade: (3/4)
+      grade: 3/4
 
 
 
@@ -208,67 +208,45 @@ evaluation:
 skill:
   show: true
   order: 5
-  title: Skills
-  description: |
-    The skills section in a resume is a dedicated section where you can list out the various skills that you possess that are relevant to the job you are applying for. This section allows you to highlight your strengths and demonstrate your capabilities to potential employers.
-
-    The skills section can include both hard skills and soft skills. Hard skills are specific technical abilities or knowledge related to a particular job or industry, such as proficiency in programming languages or experience with certain software programs. Soft skills are more general personal traits and abilities, such as communication skills, leadership, problem-solving, or teamwork.
-
-    When crafting your skills section, it's important to tailor it to the specific job you are applying for, and only include skills that are relevant to the position. This can help catch the attention of the hiring manager and demonstrate that you have the qualifications necessary to succeed in the role.
-
-    There are multiple ways to present your skills here. One way is to show them in a rating format. Another way is to group them together. Alternatively, you can use markdown to format it in a way that you prefer.
-
-  items:
-    - name: Skill A
-      level: 5
-    - name: Skill B
-      level: 4
-    - name: Skill C
-      level: 3
-    - name: Skill D
-      level: 4
-    - name: Skill E
-      level: 3
-    - name: Skill F
-      level: 1
-    - name: Skill G
-      level: 4
-    - name: Skill H
-      level: 4
-    - name: Skill I
-      level: 3
-
+  title: Technical Skills
   groups:
-    - name: Group A Skills
+    - name: Programming Languages
       item:
-        - Skill A
-        - Skill B
-        - Skill C
-        - Skill D
-    - name: Group B Skills
+        - Python
+        - Java
+        - C/C++
+        - SQL
+        - Bash
+        - JavaScript
+    - name: Libraries
       item:
-        - Skill E
-        - Skill F
-        - Skill G
-    - name: Group C Skills
+        - Tensorflow
+        - Keras
+        - PyTorch
+        - OpenCV
+        - scikit-learn
+        - NLTK
+        - Gym/Gymnasium
+    - name: Robotics Software and Libraries
       item:
-        - Skill H
-        - Skill I
+        - ROS/ROS2
+        - Gazebo
+        - MoveIt
+    - name: Environments and Tools
+      item:
+        - Unix/Linux
+        - Git
+        - LaTeX
 
 language:
   show: true
   order: 6
-  title: Languages
-  description: |
-    The languages section in a resume typically includes information about your proficiency in different languages. This section can be particularly important if you are applying for a job that requires fluency or proficiency in a specific language.
-
-    It's important to be honest about your language proficiency in your resume. If you overstate your abilities, it could lead to problems during the interview process or on the job. If you have taken language courses or earned language certifications, you can also include this information in the languages section of your resume.
-
+  title: Language Skills
   items:
-    - idiom: Chinese
-      level: Native
+    - idiom: Persian
+      level: Bilingual Proficiency
     - idiom: English
-      level: Professional
+      level: Full Professional Proficiency (TOEFL iBT to be taken on Dec 16th)
 
 experience:
   show: true
