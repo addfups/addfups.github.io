@@ -312,21 +312,23 @@ award:
     - name: Ranked amongst the top 1.5% of 170,000 participants in the Iranian University Entrance Exam 2019.
 
 
-hobbies:
+
+publication:
   show: true
   order: 11
-  title: Interests
-  description: |
-    The interests section in a resume typically refers to a section where you can mention your hobbies, interests, and activities outside of work or school. This section can give potential employers a better idea of your personality, your values, and your interests beyond your professional experience.
-
-    Including an interest section in your resume can be helpful if your interests are relevant to the job you are applying for, such as if you are applying for a job in a creative field and your hobbies include painting or writing. It can also be useful if you are applying for a job where teamwork or social skills are important, and you can mention interests that demonstrate those qualities.
-
-    However, it is important to be selective when including an interest section in your resume, and to choose interests that are appropriate and professional. Avoid including controversial or potentially offensive interests, and focus on interests that showcase your positive qualities and strengths.
-
+  title: Hobbies & Interests
   items:
-    - item: Reading
-      link: '#'
-    - item: Cooking
+    - title: Sports
+      authors:
+      conference: Played basketball for 6 years, participating in regional competitions.
+      link:
+    - title: Guitar
+      authors: 
+      conference: 5 years of playing the classical guitar with regular lessons and practice.
+      link:
+    - title: Passionate about
+      authors: 
+      conference: Learning about the human brain.
       link:
 
 reference:
@@ -376,28 +378,7 @@ reference:
 
 
 
-publication:
-  show: true
-  order: 13
-  title: Publications
-  description: |
-    The publication section in a resume is a dedicated section where you can showcase any publications that you have authored or contributed to. This section is particularly relevant for individuals in academic or research fields, but can also be relevant for individuals in other fields who have published articles or papers.
 
-    Publications can include academic journal articles, conference papers, book chapters, reports, or other written works. In this section, you should list the title of the publication, the names of any co-authors, the name of the publication or conference, the date of publication, and any other relevant details.
-
-    If you have a long list of publications, you may want to consider including only the most relevant or significant publications on your resume. Alternatively, you could create a separate publication list and provide it as a separate document, either in your application materials or upon request.
-
-    Including a publication section in your resume can help demonstrate your expertise and credibility in your field, and can help you stand out from other candidates. However, if you do not have any publications to list, it is not necessary to include this section in your resume.
-
-  items:
-    - title: Example Publication in Action
-      authors: Foo Bar
-      conference: Foobar, 2019
-      link: '#'
-    - title: The Art of Example Publication
-      authors: Foo Bar
-      conference: Foobar, 2019
-      link:
 
 patent:
   show: true
