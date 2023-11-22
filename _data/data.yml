@@ -3,7 +3,7 @@ basic:
   title:            # job title
   avatar:
     show: true                       # show or hide avatar
-    path: /assets/images/profile.png # avatar file path
+    path: /assets/images/profile.jpg # avatar file path
 
 contact:
   # meta
@@ -78,14 +78,6 @@ contact:
   goodreads:               # username          | https://www.goodreads.com/user/show/username
   strava:                  # useid             | https://www.strava.com/athletes/userid
 
-profile:
-  show: false
-  order: 1
-  title: Profile
-  description: |
-    The profile section in a resume is a brief summary of the applicant's skills, qualifications, and experience. The purpose of this section is to provide a snapshot of the applicant's professional background and highlight their most relevant accomplishments and strengths. It may include information such as the applicant's career objectives, years of experience, areas of expertise, and key achievements.
-
-    A well-crafted profile section can help to grab the attention of potential employers and encourage them to read on and learn more about the applicant's qualifications and experience.
 
 education:
   show: true
@@ -138,7 +130,7 @@ project:
         + Ultimately, selected RTABMap for visual SLAM and evaluated its performance with Eddie.
 
     - name: Neural Networks and Deep Learning Projects
-      link: 'https://github.com/zahra-niazi/robotics-spring2023/tree/main/Eddie'
+      link: 'https://github.com/zahra-niazi/dl-spring2023'
       tags: 
       date: Spring 2023
       description: |
@@ -175,7 +167,6 @@ project:
       date: Spring 2022
       description: |
         + In depth machine learning projects. 
-
 
     - name: Artificial Intelligence Projects
       link: 'https://github.com/zahra-niazi/ai-fall2021/'
@@ -308,10 +299,7 @@ award:
   title: Awards & Honors
   items:
     - name: Ranked 14th among 109 students and selected as the Exceptionally Talented Student in the undergraduate program, 2023.
-
     - name: Ranked amongst the top 1.5% of 170,000 participants in the Iranian University Entrance Exam 2019.
-
-
 
 publication:
   show: true
@@ -345,7 +333,6 @@ reference:
       phone:
       googlescholar:  
       description: |
-        Ahad Harati was my advisor at Example University.
 
     - name: Dr Haleh Amintoosi
       link: 'https://scholar.google.com.au/citations?user=UsoEbboAAAAJ&hl=en'
@@ -364,45 +351,5 @@ reference:
       email: behkamal@um.ac.ir
       phone:
       googlescholar:
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-patent:
-  show: true
-  order: 14
-  title: Patents
-  description: |
-    The patent section in a resume is a dedicated section where you can showcase any patents that you have been granted or are in the process of obtaining. This section is particularly relevant for individuals who work in scientific or technical fields, as well as for individuals who have developed innovative products or technologies.
-
-    In this section, you should list the title of the patent, the name of the inventors, the patent number, and the date it was granted. If the patent is pending, you can indicate that it is "pending" or "in review." You may also want to provide a brief description of the technology or invention that the patent covers.
-
-    Including a patent section in your resume can help demonstrate your expertise and accomplishments in your field, and can help you stand out from other candidates. However, if you do not have any patents to list, it is not necessary to include this section in your resume.
-
-    Template for a pending patent:
-
-    + [Inventor Name]. [Pursued Year]. [Title]. [Patent Number], filed [Submitted Date]. Patent pending.
-
-    Template for an approved patent:
-
-    + [Inventor Name]. [Pursued Year]. [Title]. [Patent Number], filed [Submitted Date], [Received Date].
-
-    The following are some examples of patent formats.
-
-    + Foo Bar. 2022. Example patent name one. US 123456, filed Oct 3, 2022. Patent pending.
-    + Foo Bar. 2022. Example patent name two. US 654321, filed Oct 3, 2022, and issued Nov 15, 2022.
-
 
 close: <strong>Sorry, my resume has been hidden.</strong>
