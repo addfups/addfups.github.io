@@ -17,7 +17,9 @@
     <div class="items">
       {%- for item in evaluation.items %}
       <div class="item">
-        <span>{{ item.course }}</span>
+        <div class="course-name">
+          <span>{{ item.course }}</span>
+        </div>
         {%- if item.grade %}
         <small>[{{ item.grade }}]</small>
         {%- endif %}
