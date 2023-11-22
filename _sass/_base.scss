@@ -231,6 +231,16 @@ small {
     }
   }
 
+  .award {
+    .section-content {
+      .items {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    }
+  }
+
   .skill {
     .section-content {
       .items {
@@ -295,7 +305,6 @@ small {
   }
 
   .language,
-  .award,
   .interest {
     .section-content {
       .items {
