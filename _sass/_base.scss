@@ -275,14 +275,14 @@ small {
 
           .group-name {
             font-weight: $base-font-weight * 1.50;
-            flex-basis: 20%;
+            flex-basis: 40%;
           }
 
           .group-item {
             display: flex;
             flex-wrap: wrap;
             justify-content: end;
-            flex-basis: 80%;
+            flex-basis: 60%;
 
             span:not(:last-child)::after {
               content: "/";
