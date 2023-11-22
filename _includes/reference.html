@@ -51,6 +51,12 @@
           <a href="tel:{{ item.phone }}">{{ item.phone }}</a>
         </div>
         {%- endif %}
+        {%- if item.googlescholar %}
+        <div class="reference-address">
+          <i class="icon icon-googlescholar"></i>
+          <a href="{{ item.googlescholar }}">{{ item.googlescholar }}</a>
+        </div>
+        {%- endif %}
         {%- if item.description %}
         <div class="description markdown">
           {{ item.description | markdownify }}

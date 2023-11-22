@@ -333,33 +333,26 @@ reference:
   show: true
   order: 12
   title: References
-  description: |
-    A reference section in a resume is a list of individuals who can vouch for your skills, work ethic, and character. These individuals are typically former managers, colleagues, or mentors who have worked closely with you in the past and can provide insight into your abilities and work style.
-
-    It's important to note that including a reference section in a resume is not always necessary, and some employers may prefer to request references separately. If you do choose to include a reference section, it should typically be located at the end of your resume.
-
-    When listing references, be sure to include the individual's name, job title, company name, phone number, and email address. It's also a good idea to ask for the individual's permission before listing them as a reference, and to let them know what kind of job you are applying for so they can speak to your relevant skills and experience.
-
-    It's important to choose references who can provide a positive and comprehensive evaluation of your work. Avoid listing family members or friends as references, and instead focus on individuals who can speak to your professional abilities and accomplishments.
-
   items:
-    - name: Foo One
+    - name: Dr Ahad Harati
       link: '#'
-      title: Backend Developer
-      institution: Second Company
-      address: 1234 Example St, XXX, XY 11111
-      email: foo.one@example.com
-      phone: 111-222-333
+      title: Associate Professor
+      institution: Ferdowsi University Of Mashhad
+      address: 
+      email: a.harati@um.ac.ir
+      phone:
+      googlescholar: 'https://scholar.google.com/citations?user=3Y_Nwm0AAAAJ&hl=en' 
       description: |
-        Foo One was my colleague in Second Company.
+        Ahad Harati was my advisor at Example University.
 
-    - name: Bar Two
+    - name: Dr Haleh Amintoosi
       link:
-      title: Professor
-      institution: Example University
-      address: 4321 Example St, YYY, XY 22222
-      email: bar.two@example.com
-      phone: 444-555-666
+      title: Associate Professor
+      institution: Ferdowsi University Of Mashhad
+      address: 
+      email: amintoosi@um.ac.ir
+      phone:
+      googlescholar: 'https://scholar.google.com.au/citations?user=UsoEbboAAAAJ&hl=en'
       description: |
         Bar Two was my advisor at Example University.
 
