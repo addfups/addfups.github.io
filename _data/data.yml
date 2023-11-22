@@ -99,7 +99,7 @@ education:
       degree: Bachelor
       description: |
         + GPA: 3.58/4 (17.40/20.00)
-        + Ranked in the top 12\% based on the GPA over the first three years of the enrolling class of 2019.
+        + Ranked in the top 12% based on the GPA over the first three years of the enrolling class of 2019.
 
 interest:
   show: true
@@ -184,9 +184,27 @@ project:
       description: |
         + In depth artificial intelligence projects. 
 
+evaluation:
+  show: true
+  order: 15
+  title: Selected Courses
+  items: 
+    - course: Reinforcement Learning (Graduate Course) 
+      grade: (4/4)
+    - course: Neural Networks (Graduate Course)
+      grade: (3/4)
+    - course: Robotics
+      grade: (4/4)
+    - course: Fundamentals of Computer Vision
+      grade: (4/4)
+    - course: Fundamentals of Computational Intelligence
+      grade: (4/4)
+    - course: Fundamentals and Applications of Artificial Intelligence
+      grade: (3/4)
 
 
 
+      
 skill:
   show: true
   order: 5
@@ -458,16 +476,6 @@ organization:
 
     This section can be especially valuable for candidates seeking positions in the non-profit sector, social work, or community engagement roles, where experience in social or cultural organizations can demonstrate a genuine passion for social causes and a willingness to work collaboratively towards social change. However, it is important to only include organizations that are relevant to the job you are applying for, and avoid listing organizations that may be controversial or potentially offensive.
 
-evaluation:
-  show: true
-  order: 15
-  title: Self-evaluation
-  description: |
-    The self-evaluation section in a resume is a section where you can evaluate and assess your own skills, strengths, and weaknesses. It is typically a short paragraph or bullet points at the end of your resume, which provides a personal perspective on your abilities and how they align with the requirements of the job.
-
-    In this section, you can highlight your achievements, areas of expertise, and any unique qualities or experiences that set you apart from other candidates. You can also mention areas where you are looking to improve or gain further experience.
-
-    A well-crafted self-evaluation section can demonstrate your self-awareness and confidence in your abilities, as well as your willingness to continuously learn and grow. However, it is important to be honest and avoid over-inflating your skills or qualifications, as this can negatively impact your credibility and the hiring manager's impression of you.
 
 
 

@@ -12,6 +12,19 @@
       {{ evaluation.description | markdownify }}
     </div>
     {%- endif %}
+
+    {%- if evaluation.items %}
+    <div class="items">
+      {%- for item in evaluation.items %}
+      <div class="item">
+        <span>{{ item.course }}</span>
+        {%- if item.grade %}
+        <small>[{{ item.grade }}]</small>
+        {%- endif %}
+      </div>
+      {%- endfor %}
+    </div>
+    {%- endif %}        
   </div>
 </section>
 {%- endif %}
