@@ -17,38 +17,16 @@
     <div class="items">
       {%- for item in award.items %}
       <div class="item">
-
-        {%- if item.name %}
-        <div class="row">
-          <div class="award-name">
-            {%- if item.link %}
-            <a href="{{ item.link }}">{{ item.name }}</a>
-            {%- else %}
-            <span>{{ item.name }}</span>
-            {%- endif %}
-          </div>
+        <div class="project-name">
+          <span>{{ item.name }}</span>
+          {%- if item.grade %}
+          <small>[{{ item.grade }}]</small>
+          {%- endif %}
         </div>
-
-        <div class="row">
-          <div class="awarder">
-            <span>{{ item.awarder }}</span>
-          </div>
-          <div class="date">
-            <span>{{ item.date }}</span>
-          </div>
-        </div>
-
-        {%- if item.description.size > 0 %}
-        <div class="description markdown">
-          {{ item.description | markdownify }}
-        </div>
-        {%- endif %}
-        {%- endif %}
-
       </div>
       {%- endfor %}
     </div>
-    {%- endif %}
+    {%- endif %}        
   </div>
 </section>
 {%- endif %}

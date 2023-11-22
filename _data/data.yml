@@ -307,18 +307,10 @@ award:
   order: 10
   title: Awards & Honors
   items:
-    - name: Example Awared One
-      awarder: by Example
-      date: 2022
-      link: '#'
-      description: |
-        It's my Example Awared One by Example.
-    - name: Example Awared Two
-      awarder: by Example
-      date: 2022
-      link:
-      description: |
-        It's my Example Awared Two by Example.
+    - name: Ranked 14th among 109 students and selected as the Exceptionally Talented Student in the undergraduate program, 2023.
+
+    - name: Ranked amongst the top 1.5% of 170,000 participants in the Iranian University Entrance Exam 2019.
+
 
 hobbies:
   show: true
