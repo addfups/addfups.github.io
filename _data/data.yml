@@ -335,28 +335,33 @@ reference:
   title: References
   items:
     - name: Dr Ahad Harati
-      link: '#'
+      link: 'https://scholar.google.com/citations?user=3Y_Nwm0AAAAJ&hl=en'
       title: Associate Professor
       institution: Ferdowsi University Of Mashhad
       address: 
       email: a.harati@um.ac.ir
       phone:
-      googlescholar: 'https://scholar.google.com/citations?user=3Y_Nwm0AAAAJ&hl=en' 
+      googlescholar:  
       description: |
         Ahad Harati was my advisor at Example University.
 
     - name: Dr Haleh Amintoosi
-      link:
+      link: 'https://scholar.google.com.au/citations?user=UsoEbboAAAAJ&hl=en'
       title: Associate Professor
       institution: Ferdowsi University Of Mashhad
       address: 
       email: amintoosi@um.ac.ir
       phone:
-      googlescholar: 'https://scholar.google.com.au/citations?user=UsoEbboAAAAJ&hl=en'
-      description: |
-        Bar Two was my advisor at Example University.
-
-
+      googlescholar:
+      
+    - name: Dr Haleh Amintoosi
+      link: 'https://scholar.google.com/citations?user=ndN0LZwAAAAJ&hl=en'
+      title: Assistant Professor
+      institution: Ferdowsi University Of Mashhad
+      address: 
+      email: behkamal@um.ac.ir
+      phone:
+      googlescholar:
 
 
 
