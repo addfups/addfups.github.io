@@ -17,7 +17,17 @@
     <div class="items">
       {%- for item in education.items %}
       <div class="item">
-
+        
+        <div class="row">
+          <div class="major">
+            <span>{{ item.major }}</span>
+          </div>
+          <div class="degree">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <span>{{ item.degree }}</span>
+          </div>
+        
+        </div>
         {%- if item.institution %}
         <div class="row">
           <div class="institution">
@@ -32,15 +42,7 @@
           </div>
         </div>
 
-        <div class="row">
-          <div class="major">
-            <span>{{ item.major }}</span>
-          </div>
-          <div class="degree">
-            <i class="fa-solid fa-graduation-cap"></i>
-            <span>{{ item.degree }}</span>
-          </div>
-        </div>
+
 
         {%- if item.description.size > 0 %}
         <div class="description markdown">

@@ -99,7 +99,7 @@ education:
       degree: Bachelor
       description: |
         + GPA: 3.58/4 (17.40/20.00)
-        + Ranked in the top 12% based on the GPA over the first three years of the enrolling class of 2019.
+        + Ranked in the top 12\% based on the GPA over the first three years of the enrolling class of 2019.
 
 interest:
   show: true
@@ -128,7 +128,7 @@ project:
 
     - name: Exploration of 2D/Visual SLAM and Autonomous Navigation with Parallax Eddie Robot
       link: 'https://github.com/zahra-niazi/robotics-spring2023/tree/main/Eddie'
-      tags: committer
+      tags: 
       date: Spring 2023
       description: |
         + Explored 2D and Visual SLAM with Eddie, a versatile differential drive robot. 
@@ -136,6 +136,53 @@ project:
         + Delved into the mathematical intricacies of Eddie's kinematic model to obtain precise odometry data. 
         + Tested 2D SLAM and ROS2 navigation techniques for mapping and successful robot navigation. 
         + Ultimately, selected RTABMap for visual SLAM and evaluated its performance with Eddie.
+
+    - name: Neural Networks and Deep Learning Projects
+      link: 'https://github.com/zahra-niazi/robotics-spring2023/tree/main/Eddie'
+      tags: 
+      date: Spring 2023
+      description: |
+        + Unsupervised Feature Learning and Transfer Analysis in Computer Vision: Conducted a comprehensive evaluation of unsupervised feature learning methods using CIFAR-10 and DomainNet datasets, followed by an investigation into transfer learning in computer vision with a focus on adapting to new domains.
+        + RNN-Based Sentiment Classification and Generalization Analysis: Developed and assessed RNN models for sentiment classification, examining architectural variations and Word2Vec embeddings. Analyzed model generalization by retraining on a modified dataset and evaluating performance on IMDB data.
+        + Deep Learning for Image Classification and Feature Extraction: Trained ResNet, DenseNet, and VGG16 neural networks on dog and cat datasets, optimizing accuracy by experimenting with different percentages of frozen layers. Leveraged the networks as feature extractors for data classification using random forests.
+        + MNIST Neural Network Classification and Adaptation: Developed and fine-tuned a neural network for MNIST classification, including layer and optimizer experimentation. Evaluated key metrics and assessed network adaptability to new classes, with an outlook on potential outlier detection strategies.
+
+    - name: ROS2 and Gazebo
+      link: 'https://github.com/zahra-niazi/robotics-spring2023/'
+      tags: 
+      date: Spring 2023
+      description: |
+        + Step by step ROS2 course consisting of guided tutorials and exercises based on official ROS2 and Gazebo documentations.
+
+    - name: Reinforcement Learning Projects
+      link: 
+      tags: 
+      date: Spring 2023
+      description: |
+        + Dynamic Strategies in Frozen Lake: Executed value and policy surveys in GymOpenAI's Frozen Lake, exploring factors like discount variations and non-deterministic problem-solving, visualizing outcomes with Matplotlib.
+        + Algorithmic Exploration in Taxi World: Implemented Q-Learning, Monte Carlo, and Sarsa algorithms in Gym's Taxi environment. Visualized diverse gamma scenarios, charted cumulative rewards, and discerned differences between Q-Learning and Sarsa approaches.
+
+    - name: Computer Vision Projects
+      link: 'https://github.com/zahra-niazi/cv-fall2022/'
+      tags: 
+      date: Fall 2022
+      description: |
+        + In depth computer vision projects. 
+
+    - name: Machine Learning Projects
+      link: 'https://github.com/zahra-niazi/ml-spring2022/'
+      tags: 
+      date: Spring 2022
+      description: |
+        + In depth machine learning projects. 
+
+
+    - name: Artificial Intelligence Projects
+      link: 'https://github.com/zahra-niazi/ai-fall2021/'
+      tags: 
+      date: Fall 2021
+      description: |
+        + In depth artificial intelligence projects. 
 
 
 
